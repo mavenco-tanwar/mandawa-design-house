@@ -6,7 +6,7 @@ const CollectionInnerPage = ({ products, category }) => {
   return (
     <>
       <CollectionHero
-        title={category?.title ?? "Collection"}
+        title={category?.title ?? category?.name ?? "Collection"}
         description={
           category?.description ??
           "Where Comfort Meets Craft — Discover the Art of Sitting Well."
@@ -32,26 +32,32 @@ export async function getServerSideProps({ params }) {
   try {
     const categoryId = params.category_id;
 
+    // Fetch category
     const catRes = await fetch(
       `${process.env.NEXT_PUBLIC_API_URL}/categories/${categoryId}`
     );
     if (!catRes.ok) throw new Error(`Failed to fetch category: ${catRes.status}`);
     const catData = await catRes.json();
 
+    // Fetch products
     const prodRes = await fetch(
       `${process.env.NEXT_PUBLIC_API_URL}/categories/${categoryId}/products?per_page=10`
     );
     if (!prodRes.ok) throw new Error(`Failed to fetch products: ${prodRes.status}`);
     const prodData = await prodRes.json();
 
-    // Normalize
+    // Normalize category
     const category = catData?.data ?? catData ?? null;
-    const products = (prodData?.data ?? []).map((p) => ({
-      id: p.id,
-      title: p.title ?? p.name ?? "Untitled",
-      image: p.images?.[0] ?? "/images/placeholder.png",
-      price: p.price ?? null,
-    }));
+
+    // Normalize products
+    const products = Array.isArray(prodData?.data)
+      ? prodData.data.map((p) => ({
+          id: p.id,
+          title: p.title ?? p.name ?? "Untitled",
+          image_url: p.images?.[0] ?? "/images/placeholder.png",
+          price: p.price ?? null,
+        }))
+      : [];
 
     return { props: { category, products } };
   } catch (error) {

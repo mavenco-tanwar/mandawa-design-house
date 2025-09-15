@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useMediaQuery } from "@/hooks/useMediaQuery"; // ✅ custom hook
+import { useMediaQuery } from "@/hooks/useMediaQuery";
 
 const CollectionsGroup = ({ collections = [], type = "collection" }) => {
   const isMobile = useMediaQuery("(max-width: 1024px)");
@@ -13,6 +13,19 @@ const CollectionsGroup = ({ collections = [], type = "collection" }) => {
     }
   };
 
+  // ✅ Fallback when no collections
+  if (!collections || collections.length === 0) {
+    return (
+      <section className="bg-[#F6F4EE] py-20 text-center">
+        <p className="text-lg text-gray-600 font-poppins">
+          {type === "collection"
+            ? "No collections available at the moment."
+            : "No products found in this collection."}
+        </p>
+      </section>
+    );
+  }
+
   return (
     <section className="bg-[#F6F4EE]">
       <div className="py-[60px] px-4 sm:px-6 md:px-8">
@@ -20,16 +33,12 @@ const CollectionsGroup = ({ collections = [], type = "collection" }) => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
             {collections.map((item, index) => {
               const imageSrc = item.image_url ?? "/images/placeholder.png";
-              const title = item.name ?? "Untitled";
+              const title = item.title ?? "Untitled";
 
               return (
                 <Link
                   key={item.id ?? index}
-                  href={
-                    type === "collection"
-                      ? `/collection/${item.id}`
-                      : `/product/${item.id}`
-                  }
+                  href={type === "collection" ? `/collection/${item.id}` : `/product/${item.id}`}
                   aria-label={title}
                 >
                   <div
@@ -44,9 +53,9 @@ const CollectionsGroup = ({ collections = [], type = "collection" }) => {
                         sizes="(max-width: 768px) 100vw, 
                                (max-width: 1200px) 50vw, 
                                33vw"
-                        alt={`Image of ${title}`}
+                        alt={type === "product" ? `Product: ${title}` : `Image of ${title}`}
                         className="object-cover"
-                        priority={index < 3} // ✅ small perf boost for above-fold
+                        priority={index < 3}
                       />
 
                       {/* Overlay */}

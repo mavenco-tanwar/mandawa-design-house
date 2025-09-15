@@ -19,16 +19,24 @@ CollectionPage.getLayout = function getLayout(page) {
   return <MainLayout>{page}</MainLayout>;
 };
 
-// ✅ Fetch collections at build time
 export async function getStaticProps() {
   try {
-    const res = await fetch(
-      `${process.env.NEXT_PUBLIC_API_URL}/categories`
-    );
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/categories`);
+
+    if (!res.ok) {
+      throw new Error(`Failed to fetch categories: ${res.status}`);
+    }
+
     const data = await res.json();
 
-    // handle both API response types
-    const collections = Array.isArray(data) ? data : data.data || [];
+    // Normalize API response
+    const collections = (Array.isArray(data) ? data : data.data || data.categories || []).map(
+      (item) => ({
+        id: item.id,
+        title: item.name ?? item.title ?? "Untitled",
+        image_url: item.image_url ?? "/images/placeholder.png",
+      })
+    );
 
     return {
       props: { collections },
@@ -39,6 +47,5 @@ export async function getStaticProps() {
     return { props: { collections: [] } };
   }
 }
-
 
 export default CollectionPage;
