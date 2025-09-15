@@ -38,7 +38,7 @@ export async function getServerSideProps({ params }) {
     );
     if (!catRes.ok) throw new Error(`Failed to fetch category: ${catRes.status}`);
     const catData = await catRes.json();
-
+ 
     // Fetch products
     const prodRes = await fetch(
       `${process.env.NEXT_PUBLIC_API_URL}/categories/${categoryId}/products?per_page=10`
