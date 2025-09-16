@@ -42,7 +42,6 @@ export async function getServerSideProps({ params }) {
       },
     };
   } catch (error) {
-    console.error("❌ Error fetching product:", error);
     return { props: { product: null, relatedProducts: [] } };
   }
 }

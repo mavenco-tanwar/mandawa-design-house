@@ -47,7 +47,6 @@ export async function getServerSideProps({ params }) {
 
     return { props: { category, products } };
   } catch (error) {
-    console.error("❌ Error fetching collection products:", error);
     return { props: { category: null, products: [] } };
   }
 }
