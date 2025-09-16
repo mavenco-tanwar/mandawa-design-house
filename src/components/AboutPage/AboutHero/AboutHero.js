@@ -7,7 +7,7 @@ const AboutHero = () => {
         <div className="grid grid-rows-[1fr_480px] xl:grid-rows-1 lg:grid-cols-2 gap-10 xl:gap-[40px] items-center">
           <div className="flex flex-col gap-3.5 text-left">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-belleza text-[#191919]">
-              About
+              About 
             </h2>
             <p className="font-poppins text-base md:text-lg text-[#666666]">
               Mandawa Design House is a premier exporter of exquisite furniture
