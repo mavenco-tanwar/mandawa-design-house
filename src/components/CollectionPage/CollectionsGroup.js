@@ -49,57 +49,63 @@ const CollectionsGroup = ({ collections = [], type = "collection" }) => {
                         src={imageSrc}
                         fill
                         sizes="(max-width: 768px) 100vw, 
-                               (max-width: 1200px) 50vw, 
-                               33vw"
+             (max-width: 1200px) 50vw, 
+             33vw"
                         alt={type === "product" ? `Product: ${title}` : `Image of ${title}`}
                         className="object-cover"
                         priority={index < 3}
                       />
 
+                      {/* Overlay */}
                       <div
                         className={`absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black/50 
-                          transition-all duration-300
-                          ${
-                            isMobile
-                              ? activeIndex === index
-                                ? "opacity-100"
-                                : "opacity-0"
-                              : "opacity-0 group-hover:opacity-100"
+        transition-all duration-300
+        ${isMobile
+                            ? activeIndex === index
+                              ? "opacity-100"
+                              : "opacity-0"
+                            : "opacity-0 group-hover:opacity-100"
                           }`}
                       >
-                        <h4
-                          className={`transition-all duration-300 font-belleza text-[18px] sm:text-[24px] md:text-[28px] lg:text-[34px] text-white text-center px-2
-                            ${
-                              isMobile
+                        <div className="text-center text-white px-2">
+                          {/* Title */}
+                          <h4
+                            className={`transition-all duration-300 font-belleza text-[18px] sm:text-[24px] md:text-[28px] lg:text-[34px]
+            ${isMobile
                                 ? activeIndex === index
                                   ? "translate-y-0"
                                   : "translate-y-3"
                                 : "group-hover:translate-y-0 translate-y-3"
-                            }`}
-                        >
+                              }`}
+                          >
+                            {title}
+                          </h4>
+
+                          {/* Tag (static on mobile) */}
                           {type === "product" && (
-                        <p className="font-poppins text-lg mt-2">
-                          {item.tag ? `${item.tag}` : "tag"}
-                        </p>
-                      )}
-                          {title}
+                            <p className="font-poppins text-[12px] md:text-lg mt-2">
+                              {item.tag ? item.tag : "tag"}
+                            </p>
+                          )}
+
+                          {/* Size (static on mobile) */}
                           {type === "product" && (
-                        <p className="font-poppins text-lg mt-2">
-                          {item.size ? `${item.size}` : "size"}
-                        </p>
-                      )}
-                        </h4>
+                            <p className="font-poppins text-[12px] md:text-lg mt-2">
+                              {item.size ? item.size : "size"}
+                            </p>
+                          )}
+                        </div>
                       </div>
                     </div>
 
+
                     <div
                       className={`flex flex-col items-center relative transition-all duration-300
-                        ${
-                          isMobile
-                            ? activeIndex === index
-                              ? "bottom-3 opacity-0"
-                              : "bottom-0 opacity-100"
-                            : "bottom-0 opacity-100 group-hover:bottom-3 group-hover:opacity-0"
+                        ${isMobile
+                          ? activeIndex === index
+                            ? "bottom-3 opacity-0"
+                            : "bottom-0 opacity-100"
+                          : "bottom-0 opacity-100 group-hover:bottom-3 group-hover:opacity-0"
                         }`}
                     >
                       {type === "product" && (

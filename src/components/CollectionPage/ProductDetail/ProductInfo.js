@@ -50,9 +50,9 @@ const ProductInfo = ({ product }) => {
               <h1 className="font-belleza text-2xl sm:text-3xl lg:text-[34px] text-[#191919] uppercase">
                 {product.title}
               </h1>
-              <h3 className="font-belleza text-xl sm:text-2xl text-[#191919]">
+              {/* <h3 className="font-belleza text-xl sm:text-2xl text-[#191919]">
                 ${product.price ?? "XX/XX"}
-              </h3>
+              </h3> */}
             </div>
 
             <div className="flex flex-col gap-2 py-5 border-t border-b border-gray-200">

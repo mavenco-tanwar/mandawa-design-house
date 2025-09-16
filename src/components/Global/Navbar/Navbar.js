@@ -11,15 +11,16 @@ const Navbar = () => {
       <div className="md:mx-[40px] mx-5 py-2 sm:py-3 lg:py-[14px]">
         <div className="flex justify-between h-16 items-center">
             <MobileMenu />
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 md:w-[175.06px] w-auto">
             <Link href="/">
-              <div className="flex items-center">
+              <div className="flex items-center gap-4">
                 <Image width={136} height={32} src="/images/global/image VM.png" alt="Mandawa Design House" className="h-auto w-auto" />
+                <p className="md:block hidden">Mandawa Design House</p>
               </div>
             </Link>
           </div>
           <NavLinks />
-          <div className="flex justify-center md:gap-0 gap-4 items-center">
+          <div className="flex justify-end md:gap-0 gap-4 items-center md:w-[175.06px]">
             <Link href="/contact-us">
               <Button text="Contact Us" className="px-2" variant="Brown"/>
             </Link>

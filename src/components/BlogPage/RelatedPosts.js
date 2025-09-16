@@ -8,16 +8,16 @@ const RelatedPosts = ({ blogs, onClick }) => (
     {blogs.slice(0, 4).map((blog, idx) => (
       <div
         key={idx}
-        className="flex mb-[24px] cursor-pointer"
+        className="flex mb-[24px] cursor-pointer items-center"
         onClick={() => onClick(blog)}
       >
-        <div className="relative w-[120px] h-[120px] flex-shrink-0">
+        <div className="relative w-[80px] h-[80px] flex-shrink-0">
           <Image
             src={blog.image}
             alt={blog.title}
             fill
             className="object-cover rounded"
-            sizes="120px"
+            sizes="80px"
           />
         </div>
 
@@ -26,9 +26,9 @@ const RelatedPosts = ({ blogs, onClick }) => (
           <div className="font-belleza text-[24px] text-[#191919]">
             {blog.title}
           </div>
-          <div className="text-[14px] font-poppins text-[#666666]">
+          {/* <div className="text-[14px] font-poppins text-[#666666]">
             0 Comments
-          </div>
+          </div> */}
         </div>
       </div>
     ))}

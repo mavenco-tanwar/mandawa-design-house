@@ -19,7 +19,7 @@ const BreadCrumb = ({ category, productTitle }) => {
       {category && (
         <span className="text-[#666666] font-poppins text-[14px]">
           {"/"}
-          <Link className="ml-[6px]" href={`/collection/${category.id}`}>
+          <Link className="mx-[6px]" href={`/collection/${category.id}`}>
             {category.name}
           </Link>
         </span>

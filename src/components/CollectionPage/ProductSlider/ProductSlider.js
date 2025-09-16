@@ -28,7 +28,7 @@ const ProductSlider = ({ items = [] }) => {
   if (!items.length) return null;
 
   return (
-    <section className="py-[80px] px-4 overflow-hidden">
+    <section className="pb-[40px] pt-0 md:py-[80px] px-4 overflow-hidden">
       <div className="max-w-[1280px] m-auto flex flex-col gap-[60px] overflow-hidden">
         <div className="flex justify-center">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-belleza text-[#191919] text-center">
@@ -44,7 +44,7 @@ const ProductSlider = ({ items = [] }) => {
           className="w-full"
           onSwiper={(swiper) => (swiperRef.current = swiper)}
           breakpoints={{
-            320: { slidesPerView: 1, spaceBetween: 40 },
+            320: { slidesPerView: 1.3, spaceBetween: 20 },
             640: { slidesPerView: 1.2, spaceBetween: 40 },
             1024: { slidesPerView: "auto", spaceBetween: 40 },
           }}
@@ -54,7 +54,7 @@ const ProductSlider = ({ items = [] }) => {
               key={item.id ?? index}
               className="lg:!w-[290px] h-[330px] bg-white overflow-hidden"
             >
-              <Link href={`/product/${item.id}`} passHref>
+              <Link href={`/collection/product/${item.id}`} passHref>
                 <div
                   className="relative flex flex-col gap-[15px] sm:gap-[20px] cursor-pointer group"
                   onClick={() => handleInteraction(index)}
