@@ -5,13 +5,7 @@ import CollectionsGroup from "@/components/CollectionPage/CollectionsGroup";
 const CollectionInnerPage = ({ products, category }) => {
   return (
     <>
-      <CollectionHero
-        title={category?.title ?? category?.name ?? "Collection"}
-        description={
-          category?.description ??
-          "Where Comfort Meets Craft — Discover the Art of Sitting Well."
-        }
-      />
+      <CollectionHero category={category} />
 
       {products.length > 0 ? (
         <CollectionsGroup collections={products} type="product" />
@@ -30,32 +24,24 @@ CollectionInnerPage.getLayout = function getLayout(page) {
 
 export async function getServerSideProps({ params }) {
   try {
-    const categoryId = params.category_id;
+    const categoryId = params.slug;
 
-    // Fetch category
-    const catRes = await fetch(
-      `${process.env.NEXT_PUBLIC_API_URL}/categories/${categoryId}`
-    );
-    if (!catRes.ok) throw new Error(`Failed to fetch category: ${catRes.status}`);
-    const catData = await catRes.json();
- 
-    // Fetch products
     const prodRes = await fetch(
       `${process.env.NEXT_PUBLIC_API_URL}/categories/${categoryId}/products?per_page=10`
     );
     if (!prodRes.ok) throw new Error(`Failed to fetch products: ${prodRes.status}`);
     const prodData = await prodRes.json();
 
-    // Normalize category
-    const category = catData?.data ?? catData ?? null;
+    const category = prodData?.category ?? null;
 
-    // Normalize products
     const products = Array.isArray(prodData?.data)
       ? prodData.data.map((p) => ({
           id: p.id,
           title: p.title ?? p.name ?? "Untitled",
           image_url: p.images?.[0] ?? "/images/placeholder.png",
           price: p.price ?? null,
+          size: p.size ?? null,
+          tag: p.tag ?? null,
         }))
       : [];
 

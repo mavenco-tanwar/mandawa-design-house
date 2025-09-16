@@ -36,7 +36,6 @@ export async function getStaticProps() {
 
     console.log("👉 Raw API data:", JSON.stringify(data, null, 2));
 
-    // Normalize API response
     const collections = (
       Array.isArray(data) ? data : data.data || data.categories || []
     ).map((item) => ({

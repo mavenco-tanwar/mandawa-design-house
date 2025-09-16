@@ -11,7 +11,6 @@ const RelatedPosts = ({ blogs, onClick }) => (
         className="flex mb-[24px] cursor-pointer"
         onClick={() => onClick(blog)}
       >
-        {/* Image wrapper */}
         <div className="relative w-[120px] h-[120px] flex-shrink-0">
           <Image
             src={blog.image}

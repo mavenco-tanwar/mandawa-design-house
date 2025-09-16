@@ -8,7 +8,6 @@ const FurnitureDesigning = () => {
     <section className="py-[80px] px-4 bg-[#F6F4EE]">
   <div className="max-w-[1280px] m-auto flex flex-col gap-[40px]">
     
-    {/* Heading & Description */}
     <div className="flex justify-center items-center">
       <div className="max-w-[1035px] flex flex-col gap-3.5">
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-belleza text-[#191919] text-center">
@@ -24,7 +23,6 @@ const FurnitureDesigning = () => {
       </div>
     </div>
 
-    {/* Cards Grid */}
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
       {furnitureDesigningData.map((data, index) => (
         <FurnitureDesignCards key={index} cards={data} />
@@ -32,9 +30,9 @@ const FurnitureDesigning = () => {
     </div>
 
     {/* Button */}
-    <div className="flex justify-center">
+    {/* <div className="flex justify-center">
       <Button text={"Explore More"} variant="Brown" />
-    </div>
+    </div> */}
 
   </div>
 </section>

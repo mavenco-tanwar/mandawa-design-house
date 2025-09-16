@@ -23,14 +23,12 @@ const ProductionDrawing = () => {
   return (
     <section className="py-[60px] px-4 bg-[#F6F4EE] overflow-hidden">
       <div className="max-w-[1280px] m-auto flex flex-col gap-[40px] overflow-hidden">
-        {/* Heading */}
         <div className="flex justify-center">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-belleza text-[#191919] text-center">
             Production Drawing
           </h2>
         </div>
 
-        {/* Swiper */}
         <Swiper
           effect={"coverflow"}
           centeredSlides={true}
@@ -48,17 +46,14 @@ const ProductionDrawing = () => {
           onSwiper={(swiper) => (swiperRef.current = swiper)}
           breakpoints={{
             320: {
-              // Mobile
               slidesPerView: 1,
               spaceBetween: 200,
             },
             640: {
-              // Tablet
               slidesPerView: 1.2,
               spaceBetween: 200,
             },
             1024: {
-              // Desktop
               slidesPerView: "auto",
               spaceBetween: 200,
             },
@@ -82,7 +77,6 @@ const ProductionDrawing = () => {
           ))}
         </Swiper>
 
-        {/* Navigation Arrows */}
         <div className="flex justify-center items-center gap-2">
           <ArrowBtn
             text={"<"}

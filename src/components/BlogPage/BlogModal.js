@@ -7,13 +7,12 @@ const BlogModal = ({ blog, onClose }) => {
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 px-4">
       <div className="bg-white rounded-lg max-w-2xl w-full px-2 py-8 md:px-4 md:py-10 relative max-h-[90vh] overflow-y-auto">
         <button
-          className="absolute top-0 right-3 md:top-1 md:right-4 text-gray-500 hover:text-black text-2xl"
+          className="absolute top-0 right-3 md:top-1 md:right-4 text-gray-500 hover:text-black text-2xl cursor-pointer"
           onClick={onClose}
         >
           &times;
         </button>
 
-        {/* Image wrapper */}
         <div className="relative w-full h-48 sm:h-64 mb-4 rounded overflow-hidden">
           <Image
             src={blog.image}

@@ -6,7 +6,6 @@ const VisionMission = () => {
   <div className="max-w-[1280px] mx-auto">
     <div className="grid grid-rows-[1fr_480px] xl:grid-rows-1 lg:grid-cols-2 gap-10 xl:gap-20 items-center">
       
-      {/* Text Section */}
       <div className="flex flex-col gap-3.5 text-left">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-belleza text-[#191919]">
           Mission & Vision
@@ -34,7 +33,6 @@ const VisionMission = () => {
         </ul>
       </div>
 
-      {/* Image Section - Full height & width */}
       <div className="flex gap-2 xl:h-[600PX]">
         <div className="relative h-[480px] lg:top-[75px] flex-1">
           <Image

@@ -40,7 +40,6 @@ const OurUnits = () => {
                 className="relative flex flex-col gap-[30px] cursor-pointer group"
                 onClick={() => handleTap(idx)}
               >
-                {/* Image container */}
                 <div className="relative w-full aspect-[4/3]">
                   <Image
                     src={item.src}
@@ -48,7 +47,6 @@ const OurUnits = () => {
                     fill
                     className="object-cover"
                   />
-                  {/* Overlay */}
                   <div
                     className={`absolute top-0 w-full h-full flex justify-center items-center bg-black/50 
                     transition-all duration-300
@@ -70,7 +68,6 @@ const OurUnits = () => {
                   </div>
                 </div>
 
-                {/* Static label */}
                 <div className={`flex justify-center relative bottom-0  transition-all duration-300   ${isMobile? activeIndex === idx? "bottom-5 opacity-0" : "opacity-100" : " group-hover:bottom-5 group-hover:opacity-0"
                     }`}>
                   <p className="font-belleza text-xl sm:text-2xl md:text-[28px] lg:text-[34px] text-[#191919] text-center px-4">

@@ -44,7 +44,6 @@ const OurSetUp = () => {
                     alt={item.title}
                     className="object-cover"
                   />
-                  {/* Overlay */}
                   <div
                     className={`absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black/50 
                       transition-all duration-300
@@ -66,7 +65,6 @@ const OurSetUp = () => {
                     </h4>
                   </div>
                 </div>
-                {/* Text below image */}
                 <div
                   className={`flex justify-center relative transition-all duration-300
                     ${isMobile

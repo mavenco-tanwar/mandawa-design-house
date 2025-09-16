@@ -8,14 +8,12 @@ const OrganizationChart = () => {
   style={{ backgroundImage: "url('/images/global/Group.png')" }}
 >
   <div className="max-w-[1280px] mx-auto flex flex-col gap-[40px]">
-    {/* Section Heading */}
     <div className="text-center">
       <h2 className="text-3xl md:text-4xl lg:text-5xl font-belleza text-[#191919]">
         Organization Chart
       </h2>
     </div>
 
-    {/* Image Container */}
     <div className="relative w-full min-h-[500px] md:min-h-[800px] lg:min-h-[1000px]">
       <Image
         src="/images/global/organizationChart.png"

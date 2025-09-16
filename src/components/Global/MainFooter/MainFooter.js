@@ -7,8 +7,6 @@ const MainFooter = () => {
     <>
 <section className="py-[60px] px-4 bg-[#6E2F1B]">
   <div className="max-w-[1280px] mx-auto flex flex-col gap-[60px]">
-    
-    {/* Logo & Title */}
     <div className="flex flex-col items-center text-center">
       <div className="relative w-[300px] h-[50px] sm:w-[400px] sm:h-[60px] md:w-[412px] md:h-[70px]">
         <Image
@@ -22,11 +20,7 @@ const MainFooter = () => {
         Mandawa Design House
       </h2>
     </div>
-
-    {/* Footer Info Section */}
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 text-white">
-
-      {/* Address + GSTIN */}
       <div className="flex flex-col gap-4">
         <div>
           <p className="underline font-belleza text-lg sm:text-xl md:text-2xl mb-[18px]">Address:</p>
@@ -42,8 +36,6 @@ const MainFooter = () => {
           </p>
         </div>
       </div>
-
-      {/* Contact */}
       <div className="flex flex-col gap-4">
         <p className="underline font-belleza text-lg sm:text-xl md:text-2xl">Contact Us:</p>
         <div className="flex flex-col gap-1">
@@ -55,8 +47,6 @@ const MainFooter = () => {
           </a>
         </div>
       </div>
-
-      {/* Connect Us */}
       <div className="flex flex-col gap-4 break-words">
         <p className="underline font-belleza text-lg sm:text-xl md:text-2xl">Connect Us:</p>
         <div className="flex flex-col gap-2 max-w-[330px] break-all font-poppins text-sm sm:text-base md:text-lg">

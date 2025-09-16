@@ -12,7 +12,7 @@ const BlogCard = ({ blog, onClick }) => (
         alt={blog.title}
         fill
         className="object-cover rounded-t"
-        priority={false} // you can set true for above-the-fold images
+        priority={false}
         sizes="(max-width: 768px) 100vw, 50vw"
       />
     </div>

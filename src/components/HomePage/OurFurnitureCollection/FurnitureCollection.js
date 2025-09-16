@@ -2,13 +2,13 @@ import Image from "next/image";
 import React from "react";
 import FurnitureCollectionData from "@/data/FurnitureCollectionData.json";
 import Button from "@/components/Global/Buttons";
+import Link from "next/link";
 
 const FurnitureCollection = () => {
   return (
   <section className="py-[80px] px-4">
   <div className="max-w-[1280px] m-auto flex flex-col gap-[60px]">
     
-    {/* Heading */}
     <div className="flex justify-center items-center">
       <div className="max-w-[811px] flex flex-col gap-3.5">
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-belleza text-[#191919] text-center">
@@ -23,7 +23,6 @@ const FurnitureCollection = () => {
       </div>
     </div>
 
-    {/* Cards */}
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
       {FurnitureCollectionData.map((data, index) => (
         <div key={index} className=" flex flex-col items-center text-center">
@@ -43,9 +42,10 @@ const FurnitureCollection = () => {
       ))}
     </div>
 
-    {/* Button */}
     <div className="flex justify-center">
-      <Button text={"Explore More"} variant="Brown" />
+      <Link href="/collection">
+      <Button text={"Explore Collection"} variant="Brown" />
+      </Link>
     </div>
   </div>
 </section>
