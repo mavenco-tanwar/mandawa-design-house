@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
@@ -22,6 +22,7 @@ const clientLogos = [
 
 export default function OurClients() {
   const [mounted, setMounted] = useState(false);
+  const swiperRef = useRef(null);
 
   useEffect(() => {
     setMounted(true);
@@ -38,39 +39,48 @@ export default function OurClients() {
           </h2>
         </div>
 
-      <Swiper
-  modules={[Autoplay]}
-  autoplay={{
-    delay: 2000,
-    disableOnInteraction: false,
-  }}
-  loop={true}
-  speed={500}
-    slidesPerView={3}
-  slidesPerGroup={3}
-  spaceBetween={20}
-  breakpoints={{
-    0: { slidesPerView: 3 },      
-    640: { slidesPerView: 3 },    
-    1024: { slidesPerView: 6 },   
-  }}
-  className="w-full"
->
-  {clientLogos.map((src, index) => (
-    <SwiperSlide key={index}>
-      <div className="flex justify-center">
-        <Image
-          src={src}
-          width={160}
-          height={160}
-          alt={`client company logo ${index + 1}`}
-          className="w-[80px] sm:w-[90px] md:w-[100px]" 
-        />
-      </div>
-    </SwiperSlide>
-  ))}
-</Swiper>
-
+        {/* Wrapper for hover control */}
+        <div
+          onMouseEnter={() => swiperRef.current?.autoplay.start()}
+          onMouseLeave={() => swiperRef.current?.autoplay.stop()}
+        >
+          <Swiper
+            modules={[Autoplay]}
+            onSwiper={(swiper) => {
+              swiperRef.current = swiper;
+              swiper.autoplay.stop(); // 🔹 stop autoplay initially
+            }}
+            autoplay={{
+              delay: 2000,
+              disableOnInteraction: false,
+            }}
+            loop={true}
+            speed={500}
+            slidesPerView={3}
+            slidesPerGroup={3}
+            spaceBetween={20}
+            breakpoints={{
+              0: { slidesPerView: 3 },
+              640: { slidesPerView: 3 },
+              1024: { slidesPerView: 6 },
+            }}
+            className="w-full"
+          >
+            {clientLogos.map((src, index) => (
+              <SwiperSlide key={index}>
+                <div className="flex justify-center">
+                  <Image
+                    src={src}
+                    width={160}
+                    height={160}
+                    alt={`client company logo ${index + 1}`}
+                    className="w-[80px] sm:w-[90px] md:w-[100px]"
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
     </section>
   );

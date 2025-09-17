@@ -2,6 +2,7 @@ import React from "react";
 import furnitureDesigningData from "@/data/furnitureDesigningData.json";
 import FurnitureDesignCards from "./FurnitureDesignCards";
 import Button from "@/components/Global/Buttons";
+import Link from "next/link";
 
 const FurnitureDesigning = () => {
   return (
@@ -29,10 +30,11 @@ const FurnitureDesigning = () => {
       ))}
     </div>
 
-    {/* Button */}
-    {/* <div className="flex justify-center">
-      <Button text={"Explore More"} variant="Brown" />
-    </div> */}
+    <div className="flex justify-center">
+      <Link href="/collection">
+      <Button text={"Explore Collection"} variant="Brown" />
+      </Link>
+    </div>
 
   </div>
 </section>

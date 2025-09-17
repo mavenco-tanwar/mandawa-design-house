@@ -9,12 +9,12 @@ import Image from "next/image";
 import ArrowBtn from "./ArrowBtn";
 
 const images = [
-  "/images/global/image 88.png",
-  "/images/global/image 88.png",
-  "/images/global/image 88.png",
-  "/images/global/image 88.png",
-  "/images/global/image 88.png",
-  "/images/global/image 88.png",
+  "/images/global/drawing-img-1.png",
+  "/images/global/drawing-img-2.png",
+  "/images/global/drawing-img-3.png",
+  "/images/global/drawing-img-1.png",
+  "/images/global/drawing-img-2.png",
+  "/images/global/drawing-img-3.png",
 ];
 
 const ProductionDrawing = () => {

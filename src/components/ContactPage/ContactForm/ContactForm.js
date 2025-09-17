@@ -13,16 +13,38 @@ const ContactForm = () => {
 
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
+  const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
+    setErrors({ ...errors, [name]: "" });
+  };
+
+  const validate = () => {
+    let newErrors = {};
+    const phoneRegex = /^[0-9]{10,15}$/;
+
+    if (!formData.phone) {
+      newErrors.phone = "Phone number is required";
+    } else if (!phoneRegex.test(formData.phone)) {
+      newErrors.phone = "Phone number must be 10–15 digits";
+    }
+
+    return newErrors;
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
     setMessage("");
+
+    const validationErrors = validate();
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+      setLoading(false);
+      return;
+    }
 
     try {
       const res = await fetch(
@@ -39,6 +61,10 @@ const ContactForm = () => {
       if (res.ok) {
         setMessage("✅ Message sent successfully!");
         setFormData({ name: "", email: "", phone: "", message: "" });
+
+        setTimeout(() => {
+          setMessage("");
+        }, 2000);
       } else {
         setMessage("❌ Failed to send message. Try again.");
       }
@@ -80,15 +106,22 @@ const ContactForm = () => {
                 required
                 className="w-full h-[56px] px-4 border border-[#EAEAEA] focus:outline-none focus:border-[#A3A3A3] placeholder:text-[#A3A3A3] placeholder:font-poppins"
               />
-              <input
-                type="tel"
-                name="phone"
-                value={formData.phone}
-                onChange={handleChange}
-                placeholder="Phone Number"
-                required
-                className="w-full h-[56px] px-4 border border-[#EAEAEA] focus:outline-none focus:border-[#A3A3A3] placeholder:text-[#A3A3A3] placeholder:font-poppins"
-              />
+              <div className="w-full">
+                <input
+                  type="tel"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  placeholder="Phone Number"
+                  required
+                  pattern="[0-9]{10,15}"
+                  className={`w-full h-[56px] px-4 border ${errors.phone ? "border-red-500" : "border-[#EAEAEA]"
+                    } focus:outline-none focus:border-[#A3A3A3] placeholder:text-[#A3A3A3] placeholder:font-poppins`}
+                />
+                {errors.phone && (
+                  <p className="text-red-500 text-sm mt-1">{errors.phone}</p>
+                )}
+              </div>
             </div>
           </div>
 
@@ -96,6 +129,7 @@ const ContactForm = () => {
             rows="6"
             name="message"
             value={formData.message}
+            required
             onChange={handleChange}
             placeholder="Message"
             className="w-full px-4 py-4 border border-[#EAEAEA] focus:outline-none focus:border-[#A3A3A3] placeholder:text-[#A3A3A3] placeholder:font-poppins resize-none"
@@ -113,7 +147,9 @@ const ContactForm = () => {
           </div>
 
           {message && (
-            <p className="text-center text-sm mt-4">
+            <p
+              className={`text-center text-sm mt-4`}
+            >
               {message}
             </p>
           )}

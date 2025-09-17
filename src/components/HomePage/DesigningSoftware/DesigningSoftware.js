@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
@@ -22,6 +22,7 @@ const softwareList = [
 
 export default function DesigningSoftware() {
   const [mounted, setMounted] = useState(false);
+  const swiperRef = useRef(null);
 
   useEffect(() => {
     setMounted(true);
@@ -40,41 +41,52 @@ export default function DesigningSoftware() {
             Designing Software
           </h2>
         </div>
-        <Swiper
-          modules={[Autoplay]}
-          autoplay={{
-            delay: 2000,
-            disableOnInteraction: false,
-          }}
-          loop={true}
-          speed={500}
-          slidesPerView={3}
-          slidesPerGroup={3}
-          spaceBetween={20}
-          breakpoints={{
-            0: { slidesPerView: 3 },
-            640: { slidesPerView: 3 },
-            1024: { slidesPerView: 6 },
-          }}
-          className="w-full"
+
+        {/* Wrapper to detect hover */}
+        <div
+          onMouseEnter={() => swiperRef.current?.autoplay.start()}
+          onMouseLeave={() => swiperRef.current?.autoplay.stop()}
         >
-          {softwareList.map((item, index) => (
-            <SwiperSlide key={index}>
-              <div className="flex flex-col items-center gap-4">
-                <Image
-                  src={item.src}
-                  width={100}
-                  height={100}
-                  alt={item.name}
-                  className="w-[70px] sm:w-[80px] md:w-[100px]"
-                />
-                <p className="font-belleza text-[22px] md:text-[28px] text-[#191919] text-center">
-                  {item.name}
-                </p>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+          <Swiper
+            modules={[Autoplay]}
+            onSwiper={(swiper) => {
+              swiperRef.current = swiper;
+              swiper.autoplay.stop(); // stop autoplay initially
+            }}
+            autoplay={{
+              delay: 2000,
+              disableOnInteraction: false,
+            }}
+            loop={true}
+            speed={500}
+            slidesPerView={3}
+            slidesPerGroup={3}
+            spaceBetween={20}
+            breakpoints={{
+              0: { slidesPerView: 3 },
+              640: { slidesPerView: 3 },
+              1024: { slidesPerView: 6 },
+            }}
+            className="w-full"
+          >
+            {softwareList.map((item, index) => (
+              <SwiperSlide key={index}>
+                <div className="flex flex-col items-center gap-4">
+                  <Image
+                    src={item.src}
+                    width={100}
+                    height={100}
+                    alt={item.name}
+                    className="w-[70px] sm:w-[80px] md:w-[100px]"
+                  />
+                  <p className="font-belleza text-[22px] md:text-[28px] text-[#191919] text-center">
+                    {item.name}
+                  </p>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
     </section>
   );
