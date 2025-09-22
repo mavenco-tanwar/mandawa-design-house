@@ -202,6 +202,7 @@ straight cut.`,
                                 : "translate-y-4 opacity-0"
                               : "group-hover:translate-y-0 group-hover:opacity-100 translate-y-4 opacity-0"
                             }`}
+                            style={{ scrollbarWidth: "none" }}
                         >
                           {item.description}
                         </p>

@@ -9,7 +9,7 @@ const ManufacturingSection = () => {
   const items = [
     { src: "/images/global/image 11.png", title: "C T P & Wood Seasoning" },
     { src: "/images/global/image 22.png", title: "Wood Storage Area" },
-    { src: "/images/global/image 26.png", title: "Our Set Up : Manufacturing" }
+    { src: "/images/global/image 26.png", title: "Manufacturing Set Up" }
   ];
 
   useEffect(() => {
