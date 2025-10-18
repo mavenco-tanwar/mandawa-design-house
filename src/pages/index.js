@@ -4,7 +4,7 @@ import FurnitureDesigning from "@/components/HomePage/FurnitureDesigning/Furnitu
 import Hero from "@/components/HomePage/Hero/Hero";
 import MandawaHomeImage from "@/components/HomePage/MandawaHomeImage/MandawaHomeImage";
 import ManufacturingSection from "@/components/HomePage/ManufacturingSection/ManufacturingSection";
-import OrganizationChart from "@/components/HomePage/OrganizationChart/OrganizationChart";
+// import OrganizationChart from "@/components/HomePage/OrganizationChart/OrganizationChart";
 import OurClients from "@/components/HomePage/OurClients/OurClients";
 import FurnitureCollection from "@/components/HomePage/OurFurnitureCollection/FurnitureCollection";
 import OurSetUp from "@/components/HomePage/OurSetUp/OurSetUp";
@@ -24,7 +24,7 @@ import MainLayout from "@/Layouts/MainLayout";
    <MandawaHomeImage/>
     <VisionMission/>
    <FurnitureCollection/>
-   <OrganizationChart/>
+   {/* <OrganizationChart/> */}
    <OurUnits/>
     <ManufacturingSection/>
     <WoodenMachinery/>

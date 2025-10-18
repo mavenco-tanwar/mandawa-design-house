@@ -3,8 +3,8 @@ import Button from "../Global/Buttons";
 
 const BlogCard = ({ blog, onClick }) => (
   <div
-    className="hover:bg-white rounded hover:shadow hover:shadow-lg transition cursor-pointer flex flex-col"
-    onClick={onClick}
+    className="hover:bg-white rounded hover:shadow hover:shadow-lg transition flex flex-col"
+    // onClick={onClick}
   >
     <div className="w-full md:h-[440px] h-64 relative">
       <Image
