@@ -164,7 +164,7 @@ c6f0b790cdd7a4c97671e1f02070fa552bfc101b public/images/global/image 42.png
 974f7c6228d31c7e5b924f5f1a00c2e535f0ba54 public/images/global/image 50.png
 d93d51187e3ba9c6388408ec72530d8b8e155ca2 public/images/global/image 51.png
 b10e99cae6b43dfad51335df297cf7953bbee3bc public/images/global/image 88.png
-77ebae7069f584cbe097abb1538dae0c18e35950 public/images/global/image VM.png
+77ebae7069f584cbe097abb1538dae0c18e35950 public/images/global/image-VM.png
 014ddf44998abc57b6818d39ca2a5b2f83512763 public/images/global/image52.png
 9991ab83c6a2ac1636d14485e92c20884d0a0430 public/images/global/image53.png
 573c7d40c5a4337634372e9fe97483ebcafb73f1 public/images/global/image54.png

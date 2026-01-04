@@ -14,8 +14,15 @@ const Navbar = () => {
           <div className="flex-shrink-0 md:w-[175.06px] w-auto">
             <Link href="/">
               <div className="flex items-center gap-4">
-                <Image width={136} height={32} src="/images/global/image VM.png" alt="Mandawa Design House" className="h-auto w-auto" />
-                <p className="md:block hidden">Mandawa Design House</p>
+                {/* <Image width={136} height={32} src="/images/global/image-VM.png" alt="Mandawa Design House" className="h-auto w-auto" /> */}
+                <Image 
+  width={136} 
+  height={32} 
+  src="/images/global/image-VM.png" 
+  alt="Mandawa Design House" 
+  className="h-auto w-auto max-md:w-24 max-md:h-30 md:w-[136px] md:h-[160px]" 
+/>
+                {/* <p className="md:block hidden">Mandawa Design House</p> */}
               </div>
             </Link>
           </div>

@@ -16,7 +16,7 @@ const MandawaHomeImage = () => {
 
         <div className="absolute inset-0 flex flex-col md:flex-row items-center justify-center gap-4 text-center md:text-left">
           <Image
-            src="/images/global/image VM.png"
+            src="/images/global/image-VM.png"
             width={100}
             height={100}
             alt="mandawa design house Logo"
