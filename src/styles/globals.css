@@ -8,8 +8,10 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-belleza: var(--font-belleza);
-  --font-poppins: var(--font-poppins);
+  /* --font-belleza: var(--font-belleza);
+  --font-poppins: var(--font-poppins); */
+  --font-belleza: var(--font-fjalla-one);
+  --font-poppins: var(--font-fjalla-one);
 }
 
 @media (prefers-color-scheme: dark) {

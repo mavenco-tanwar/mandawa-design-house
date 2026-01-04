@@ -9,7 +9,7 @@ const Button = ({ text, onClick, variant = "default" , styles}) => {
       className={clsx(
         "md:px-8 px-4 md:py-3 py-2 transition font-medium w-fit  cursor-pointer ",
         {
-          "bg-[#6E2F1B] text-[#FAFAFA] hover:bg-[#191919]": variant === "Brown",
+          "bg-[#d56e20] text-[#FAFAFA] hover:bg-[#191919]": variant === "Brown",
           "bg-white text-[#1D2130] hover:bg-[#FFD12D] hover:text-black relative right-2":
             variant === "whiteSubscribe",
           "bg-white text-[#1D2130] hover:bg-slate-600 hover:text-[#FFD12D]":

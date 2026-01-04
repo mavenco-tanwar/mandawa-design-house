@@ -12,7 +12,7 @@ const NavLinks = () => {
         )}>
         Home
       </Link>
-      <Link
+      {/* <Link
         href="/about"
         className={clsx(
           "text-[#191919] font-normal hover:text-black md:p-[8px_16px]",
@@ -20,7 +20,7 @@ const NavLinks = () => {
         )}
       >
         About
-      </Link>
+      </Link> */}
       <Link
         href="/collection"
         className={clsx(
@@ -31,7 +31,7 @@ const NavLinks = () => {
         Collection
       </Link>
 
-      <Link
+      {/* <Link
         href="/blog"
         className={clsx(
           "text-[#191919] font-normal hover:text-black md:p-[8px_16px]",
@@ -39,7 +39,7 @@ const NavLinks = () => {
         )}
       >
         Blog
-      </Link>
+      </Link> */}
     </div>
   );
 };

@@ -29,9 +29,9 @@ const Footer = () => {
                 Quick Links
               </p>
               <div className="flex flex-col gap-1">
-                <Link href="/about" className="text-[14px] sm:text-[16px] md:text-[18px] font-poppins text-white">About</Link>
+                {/* <Link href="/about" className="text-[14px] sm:text-[16px] md:text-[18px] font-poppins text-white">About</Link> */}
                 <Link href="/collection" className="text-[14px] sm:text-[16px] md:text-[18px] font-poppins text-white">Collection</Link>
-                <Link href="/blog" className="text-[14px] sm:text-[16px] md:text-[18px] font-poppins text-white">Blog</Link>
+                {/* <Link href="/blog" className="text-[14px] sm:text-[16px] md:text-[18px] font-poppins text-white">Blog</Link> */}
                 <Link href="/contact-us" className="text-[14px] sm:text-[16px] md:text-[18px] font-poppins text-white">Contact Us</Link>
               </div>
             </div>

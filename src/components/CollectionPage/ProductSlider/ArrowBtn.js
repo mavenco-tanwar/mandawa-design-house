@@ -8,7 +8,7 @@ const ArrowBtn = ({ text, onClick, variant = "default" }) => {
          className={clsx(
            "md:px-4 px-2 md:py-2 py-1 transition font-medium w-fit cursor-pointer",
            {
-             "bg-[#6E2F1B] text-[#FAFAFA] hover:bg-[#191919]": variant === "Brown",
+             "bg-[#42393b] text-[#FAFAFA] hover:bg-[#191919]": variant === "Brown",
              
            }
          )}
