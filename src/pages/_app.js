@@ -2,6 +2,7 @@ import "@/styles/globals.css";
 import RouteLoader from "@/components/RouteLoader";
 // import { Belleza, Poppins } from "next/font/google";
 import { Fjalla_One } from "next/font/google";
+<link rel="icon" href="/images/global/image-VM.png" />
 
 // const belleza = Belleza({
 //   variable: "--font-belleza",

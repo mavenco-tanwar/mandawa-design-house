@@ -4,6 +4,11 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
+      <link
+          rel="icon"
+          type="image/png"
+          href="/fav.png"
+        />
       <body className="antialiased">
         <Main />
         <NextScript />
