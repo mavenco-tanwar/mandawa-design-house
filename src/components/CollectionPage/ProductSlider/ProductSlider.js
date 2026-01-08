@@ -31,7 +31,7 @@ const ProductSlider = ({ items = [] }) => {
     <section className="pb-[40px] pt-0 md:py-[80px] px-4 overflow-hidden">
       <div className="max-w-[1280px] m-auto flex flex-col gap-[60px] overflow-hidden">
         <div className="flex justify-center">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-belleza text-[#191919] text-center">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-belleza text-[#3FA291] text-center">
             Related Products
           </h2>
         </div>

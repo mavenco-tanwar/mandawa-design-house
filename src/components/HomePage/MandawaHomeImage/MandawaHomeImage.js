@@ -1,35 +1,68 @@
-import Image from 'next/image'
-import React from 'react'
+import Image from "next/image";
+import React from "react";
+import Button from "@/components/Global/Buttons";
+import Link from "next/link";
 
 const MandawaHomeImage = () => {
- 
-      return (
+  return (
     <section>
-      <div className="relative min-h-[680px] w-full">
+      <div className="relative min-h-[590px] md:min-h-[745px] w-full">
+        {/* Background image */}
         <Image
           src="/images/global/image 5.png"
           alt="mandawa design house big image"
           fill
-          className="object-cover"
           priority
+          className="object-cover object-[40%_50%] md:object-center"
         />
 
-        <div className="absolute inset-0 flex flex-col md:flex-row items-center justify-center gap-4 text-center md:text-left">
+        {/* Overlay + Center content */}
+        <div className="absolute inset-0 flex flex-col items-center justify-start gap-4 text-center px-4
+                pt-24 sm:pt-28 md:pt-36
+                bg-gradient-to-b from-black/60 via-black/40 to-black/80">
           <Image
             src="/images/global/image-VM.png"
-            width={100}
-            height={100}
+            width={90}
+            height={90}
             alt="mandawa design house Logo"
+            className="bg-[#F6F4EE] p-[10px] rounded-full"
           />
 
-          <h3 className="text-white text-[40px] md:text-[80px] font-belleza">
+          <h3 className="text-white text-[32px] sm:text-[44px] md:text-[80px] font-belleza leading-tight">
             Mandawa Design House
           </h3>
+        </div>
+
+        {/* Bottom content */}
+        <div className="absolute bottom-15 md:bottom-28 left-1/2 -translate-x-1/2 w-full px-4">
+          <div className="max-w-[900px] mx-auto text-center">
+            <p className="text-white text-xs sm:text-sm md:text-lg mb-2">
+              <b>Crafting India’s Living Heritage Through Handcrafted Furniture</b>
+            </p>
+
+            <p className="text-white text-xs sm:text-sm md:text-base mb-2">
+              Mandawa Design House is not a furniture factory. It is a
+              <b> heritage-driven design house</b> dedicated to preserving India’s
+              disappearing art forms through handcrafted furniture. Every piece
+              is created by skilled artists whose hands carry generations of
+              knowledge, patience, and cultural memory.
+            </p>
+
+            <p className="text-white text-xs sm:text-sm md:text-base">
+              We work exclusively on <b>bulk, custom, and long-term B2B projects</b> for
+              clients who value originality, depth, and legacy over mass
+              production.
+            </p>
+          </div>
+          <div className="flex justify-center mt-10">
+            <Link href="/contact-us">
+              <Button text="Discuss a Bulk or Custom Project" className="px-2" variant="whiteSubscribe" />
+            </Link>
+          </div>
         </div>
       </div>
     </section>
   );
-  
-}
+};
 
-export default MandawaHomeImage
+export default MandawaHomeImage;

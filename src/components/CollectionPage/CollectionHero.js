@@ -20,10 +20,10 @@ const CollectionHero = ({ category }) => {
       <div className="max-w-[1280px] mx-auto">
         <div className="flex gap-10 xl:gap-[40px] items-center">
           <div className="w-fit md:w-[400px] flex-shrink-0">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-belleza text-[#191919]">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-belleza text-[#3FA291]">
               {category?.name ?? "Our Collection"}
             </h2>
-            <p className="mt-4 font-poppins text-base md:text-lg text-[#666666]">
+            <p className="mt-4 font-poppins text-base md:text-lg text-[#42393B]">
               {category?.description ?? "More than furniture, this is an experience. Our collection is a testament to the harmony of craft and comfort, created to transform ordinary seating into extraordinary moments of ease."}
             </p>
           </div>

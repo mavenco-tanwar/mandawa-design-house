@@ -30,27 +30,27 @@ function MobileMenu() {
           <div className="flex flex-col gap-16 w-full">
             <Link
               href="/"
-              className="text-[#1D2130] text-2xl font-medium capitalize flex items-center hover:text-black px-4 w-full"
+              className="text-[#42393B] text-2xl font-medium capitalize flex items-center hover:text-black px-4 w-full"
             >
               Home
             </Link>
             {/* <Link
               href="/about"
-              className="text-[#1D2130] text-2xl font-medium capitalize flex items-center hover:text-black px-4 w-full"
+              className="text-[#42393B] text-2xl font-medium capitalize flex items-center hover:text-black px-4 w-full"
             >
               About
             </Link> */}
 
             <Link
               href="/collection"
-              className="text-[#1D2130] text-2xl font-medium capitalize flex items-center hover:text-black px-4 w-full"
+              className="text-[#42393B] text-2xl font-medium capitalize flex items-center hover:text-black px-4 w-full"
             >
              Collection
             </Link>
 
             {/* <Link
               href="/blog"
-              className="text-[#1D2130] text-2xl font-medium capitalize flex items-center hover:text-black px-4 w-full"
+              className="text-[#42393B] text-2xl font-medium capitalize flex items-center hover:text-black px-4 w-full"
             >
               Blog
             </Link> */}

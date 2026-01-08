@@ -1,5 +1,7 @@
 import Image from "next/image";
 import React from "react";
+import Button from "@/components/Global/Buttons";
+import Link from "next/link";
 
 const WhyChooseUs = () => {
   return (
@@ -15,41 +17,46 @@ const WhyChooseUs = () => {
     </div>
     <div className="flex flex-col gap-10">
       <div className="flex flex-col gap-3.5 max-w-[506px]">
-        <h3 className="font-belleza text-4xl md:text-6xl sm:text-5xl text-[#191919]">
+        <h3 className="font-belleza text-4xl md:text-6xl sm:text-5xl text-[#3FA291]">
           Why Choose Us?
         </h3>
-        <p className="font-poppins text-[#666666] text-[18px] sm:text-[20px]">
+        <p className="font-poppins text-[#42393B] text-[18px] sm:text-[20px]">
           A company, as a client, looks for Quality delivered Fast and at a low Cost.
         </p>
       </div>
 
       <div className="flex flex-col gap-3.5 pl-6">
         <ul className="list-disc">
-          <li className="font-poppins text-xl sm:text-2xl text-[#191919]">
+          <li className="font-poppins text-xl sm:text-2xl text-[#42393B]">
             We have the experience
           </li>
         </ul>
-        <p className="font-poppins text-[#666666] text-[18px] sm:text-[20px]">
+        <p className="font-poppins text-[#42393B] text-[18px] sm:text-[20px]">
           To provide consistent quality
         </p>
-        <p className="font-poppins text-[#666666] text-[18px] sm:text-[20px]">
+        <p className="font-poppins text-[#42393B] text-[18px] sm:text-[20px]">
           Delivery on time
         </p>
       </div>
 
       <div className="flex flex-col gap-3.5 pl-6">
         <ul className="list-disc">
-          <li className="font-poppins text-xl sm:text-2xl text-[#191919]">
+          <li className="font-poppins text-xl sm:text-2xl text-[#42393B]">
             We can provide Low Cost product in Bulk through
           </li>
         </ul>
-        <p className="font-poppins text-[#666666] text-[18px] sm:text-[20px]">
+        <p className="font-poppins text-[#42393B] text-[18px] sm:text-[20px]">
           Leveraging our in-house designing capacity
         </p>
-        <p className="font-poppins text-[#666666] text-[18px] sm:text-[20px]">
+        <p className="font-poppins text-[#42393B] text-[18px] sm:text-[20px]">
           Our Hi-tech production set-up and assembly line
         </p>
       </div>
+      <div className="">
+            <Link href="/contact-us">
+              <Button text="Contact Us" className="px-2" variant="Brown" />
+            </Link>
+          </div>
     </div>
   </div>
 </section>

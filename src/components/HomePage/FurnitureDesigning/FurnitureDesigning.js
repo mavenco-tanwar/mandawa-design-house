@@ -3,41 +3,50 @@ import furnitureDesigningData from "@/data/furnitureDesigningData.json";
 import FurnitureDesignCards from "./FurnitureDesignCards";
 import Button from "@/components/Global/Buttons";
 import Link from "next/link";
+import Image from "next/image";
 
 const FurnitureDesigning = () => {
   return (
     <section className="py-[80px] px-4 bg-[#F6F4EE]">
-  <div className="max-w-[1280px] m-auto flex flex-col gap-[40px]">
-    
-    <div className="flex justify-center items-center">
-      <div className="max-w-[1035px] flex flex-col gap-3.5">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-belleza text-[#191919] text-center">
-          Furniture Designing
-        </h2>
-        <p className="text-[14px] sm:text-[16px] md:text-[18px] font-poppins text-[#A3A3A3] text-center leading-relaxed">
-          Furniture design is a process of planning and creating furniture for homes, offices,
-          or other spaces, focusing on aesthetics, functionality, and comfort. It encompasses
-          various aspects, including material selection, structural integrity, ergonomics, and
-          overall design style. Essentially, furniture designers strive to create objects that
-          are both visually appealing and serve a practical purpose in a given environment.
-        </p>
+      <div className="max-w-[1280px] mx-auto">
+        <div className="grid grid-rows-[1fr_480px] xl:grid-rows-1 lg:grid-cols-2 gap-10 xl:gap-20 items-center">
+          <div>
+            <div className="max-w-[1035px] flex mb-10 flex-col gap-3.5">
+              <h2 className="text-4xl md:text-4xl font-belleza text-[#3FA291]">
+                Our Specialisation
+              </h2>
+              <p className="font-poppins text-base md:text-md text-[#42393B] leading-relaxed">
+                We specialise in <b>custom and bulk handcrafted furniture</b>, including: - Furniture for boutique hotels, heritage properties, and resorts - Statement pieces for luxury residential and commercial interiors - Region-inspired collections based on Indian art and culture
+              </p>
+              <p className="font-poppins text-base md:text-md text-[#42393B] leading-relaxed">
+                <b>Materials & Techniques</b>: - Seasoned solid wood - Traditional joinery - Hand carving and hand painting - Natural and heritage finishes
+              </p>
+            </div>
+            <div className="max-w-[1035px] flex flex-col gap-3.5">
+              <h2 className="text-4xl md:text-4xl font-belleza text-[#3FA291]">
+                Who We Work With
+              </h2>
+              <p className="font-poppins text-base md:text-md text-[#42393B] leading-relaxed">
+                We collaborate with: - Boutique and heritage hotels - Interior designers and architects - International buyers and importers - Curators and collectors
+              </p>
+              <p className="font-poppins text-base md:text-md text-[#42393B] leading-relaxed">
+                If you value originality, craftsmanship, and cultural integrity, we align.
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-2 xl:h-[430px]">
+            <div className="relative h-[430px] flex-1">
+              <Image
+                src={"/images/global/image 30.png"}
+                alt="working images"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-      {furnitureDesigningData.map((data, index) => (
-        <FurnitureDesignCards key={index} cards={data} />
-      ))}
-    </div>
-
-    <div className="flex justify-center">
-      <Link href="/collection">
-      <Button text={"Explore Collection"} variant="Brown" />
-      </Link>
-    </div>
-
-  </div>
-</section>
+    </section>
 
   );
 };

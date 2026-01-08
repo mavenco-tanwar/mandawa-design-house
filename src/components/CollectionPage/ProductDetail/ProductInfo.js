@@ -46,8 +46,8 @@ const ProductInfo = ({ product }) => {
           {/* Right side - Product Info */}
           <div className="flex flex-col gap-6 px-2 lg:px-0">
             <div className="flex flex-col gap-2 pb-5">
-              <p className="text-[#666666] font-poppins text-sm">{product.tag}</p>
-              <h1 className="font-belleza text-2xl sm:text-3xl lg:text-[34px] text-[#191919] uppercase">
+              <p className="text-[#42393B] font-poppins text-sm">{product.tag}</p>
+              <h1 className="font-belleza text-2xl sm:text-3xl lg:text-[34px] text-[#3FA291] uppercase">
                 {product.title}
               </h1>
               {/* <h3 className="font-belleza text-xl sm:text-2xl text-[#191919]">
@@ -56,14 +56,14 @@ const ProductInfo = ({ product }) => {
             </div>
 
             <div className="flex flex-col gap-2 py-5 border-t border-b border-gray-200">
-              <p className="text-sm font-poppins text-[#666666]">{product.size}</p>
-              <p className="text-sm font-poppins text-[#666666]">
+              <p className="text-sm font-poppins text-[#42393B]">{product.size}</p>
+              <p className="text-sm font-poppins text-[#42393B]">
                 {product.description}
               </p>
             </div>
 
             <div className="flex flex-col gap-3">
-              <p className="text-sm font-poppins text-[#666666]">
+              <p className="text-sm font-poppins text-[#42393B]">
                 For enquiry, please contact us
               </p>
               <div className="w-full sm:w-[300px] lg:w-full">

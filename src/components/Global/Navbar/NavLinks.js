@@ -7,7 +7,7 @@ const NavLinks = () => {
   return (
     <div className="hidden md:flex">
       <Link href="/" className={clsx(
-          "text-[#191919] font-normal hover:text-black md:p-[8px_16px]",
+          "text-[#42393B] font-normal hover:text-black md:p-[8px_16px]",
           router.pathname === "/" && "border-b border-[#191919]"
         )}>
         Home
@@ -15,7 +15,7 @@ const NavLinks = () => {
       {/* <Link
         href="/about"
         className={clsx(
-          "text-[#191919] font-normal hover:text-black md:p-[8px_16px]",
+          "text-[#42393B] font-normal hover:text-black md:p-[8px_16px]",
           router.pathname === "/about" && "border-b border-[#191919]"
         )}
       >
@@ -24,7 +24,7 @@ const NavLinks = () => {
       <Link
         href="/collection"
         className={clsx(
-          "text-[#191919] font-normal hover:text-black md:p-[8px_16px]",
+          "text-[#42393B] font-normal hover:text-black md:p-[8px_16px]",
           router.pathname === "/collection" && "border-b border-[#191919]"
         )}
       >
@@ -34,7 +34,7 @@ const NavLinks = () => {
       {/* <Link
         href="/blog"
         className={clsx(
-          "text-[#191919] font-normal hover:text-black md:p-[8px_16px]",
+          "text-[#42393B] font-normal hover:text-black md:p-[8px_16px]",
           router.pathname === "/blog" && "border-b border-[#191919]"
         )}
       >

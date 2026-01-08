@@ -13,28 +13,32 @@ import ProductionDrawing from "@/components/HomePage/ProductionDrawing/Productio
 import VisionMission from "@/components/HomePage/VisionMission/VisionMission";
 import WhyChooseUs from "@/components/HomePage/WhyChooseUs/WhyChooseUs";
 import WoodenMachinery from "@/components/HomePage/WoodenMachinery/WoodenMachinery";
+import AboutHero from '@/components/AboutPage/AboutHero/AboutHero';
 
 import MainLayout from "@/Layouts/MainLayout";
+import VisionFuture from "@/components/HomePage/VisionFuture/VisionFuture";
 
 
  function Home() {
   return (
    <>
-   <Hero/>
    <MandawaHomeImage/>
+<AboutHero />
+   {/* <Hero/> */}
     <VisionMission/>
-   <FurnitureCollection/>
    {/* <OrganizationChart/> */}
-   <OurUnits/>
-    <ManufacturingSection/>
-    <WoodenMachinery/>
-   <OurSetUp/>
+   {/* <OurUnits/> */}
+    {/* <ManufacturingSection/> */}
+    {/* <WoodenMachinery/> */}
+   {/* <OurSetUp/> */}
    <FurnitureDesigning/>
-   <ConceptOfDrawing/>
-   <ProductionDrawing/>
-   <DesigningSoftware/>
-   <OurClients/>
+   {/* <ConceptOfDrawing/> */}
+   {/* <ProductionDrawing/> */}
+   {/* <DesigningSoftware/> */}
+   {/* <OurClients/> */}
+   <VisionFuture />
    <WhyChooseUs/>   
+   <FurnitureCollection/>
    </>
   );
 }

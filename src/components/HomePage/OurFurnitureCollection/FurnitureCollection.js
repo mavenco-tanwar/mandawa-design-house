@@ -11,10 +11,10 @@ const FurnitureCollection = () => {
     
     <div className="flex justify-center items-center">
       <div className="max-w-[811px] flex flex-col gap-3.5">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-belleza text-[#191919] text-center">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-belleza text-[#3FA291] text-center">
           Our Furniture Collection
         </h2>
-        <p className="text-base sm:text-lg md:text-xl font-poppins text-[#A3A3A3] text-center">
+        <p className="text-base sm:text-lg md:text-xl font-poppins text-[#42393B] text-center">
           Explore our premium collection of modern furniture, thoughtfully
           designed to elevate your living spaces. Find the perfect piece for
           your home, whether it&apos;s a cozy sofa, elegant bookshelf, or a
@@ -34,8 +34,8 @@ const FurnitureCollection = () => {
             className="w-full h-[400px] object-contain"
           />
           </div>
-          <h3 className="mt-4 text-lg sm:text-xl md:text-2xl font-belleza">{data.title}</h3>
-          <p className="mt-2 text-gray-500 font-poppins max-w-[300px] text-sm sm:text-base">
+          <h3 className="mt-4 text-lg sm:text-xl md:text-2xl font-belleza text-[#42393B]">{data.title}</h3>
+          <p className="mt-2 text-[#42393B] font-poppins max-w-[300px] text-sm sm:text-base">
             {data.description}
           </p>
         </div>

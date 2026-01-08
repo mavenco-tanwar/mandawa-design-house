@@ -32,7 +32,7 @@ const ContactMap = () => {
                 <h4 className="text-[24px] md:text-[34px] mb-2 font-belleza text-[#6E2F1B]">
                   Phone
                 </h4>
-                <Link href="tel:+919829823333" className="text-lg md:text-2xl font-poppins text-[#666666]">
+                <Link href="tel:+919829823333" className="text-lg md:text-2xl font-poppins text-[#42393B]">
                   +91 9829823333
                 </Link>
               </div>
@@ -53,7 +53,7 @@ const ContactMap = () => {
                 </h4>
                 <Link
                   href="https://mandawadesignhouse.com"
-                  className="text-lg md:text-xl font-poppins text-[#666666] break-all"
+                  className="text-lg md:text-xl font-poppins text-[#42393B] break-all"
                 >
                   https://mandawadesignhouse.com
                 </Link>
@@ -73,7 +73,7 @@ const ContactMap = () => {
                 <h4 className="text-[24px] md:text-[34px] mb-2 font-belleza text-[#6E2F1B]">
                   Address
                 </h4>
-                <p className="text-lg md:text-2xl font-poppins text-[#666666]">
+                <p className="text-lg md:text-2xl font-poppins text-[#42393B]">
                   B-158, 1st Phase, RIICO Industrial Area Manda, Chomu, 303702
                 </p>
               </div>

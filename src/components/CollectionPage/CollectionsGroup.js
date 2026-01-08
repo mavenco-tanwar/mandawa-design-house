@@ -29,7 +29,7 @@ const CollectionsGroup = ({ collections = [], type = "collection" }) => {
     <section className="bg-[#F6F4EE]">
       <div className="p-[40px] sm:px-6 md:p-[60px]">
         <div className="max-w-[1280px] m-auto flex flex-col gap-[40px] sm:gap-[50px] md:gap-[60px]">
-          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10">
             {collections.map((item, index) => {
               const imageSrc = item.image_url ?? "/images/placeholder.png";
               const title = item.title ?? "Untitled";
@@ -113,7 +113,7 @@ const CollectionsGroup = ({ collections = [], type = "collection" }) => {
                           {item.tag ? `${item.tag}` : "tag"}
                         </p>
                       )}
-                      <p className="font-belleza text-[18px] sm:text-[24px] md:text-[28px] lg:text-[34px] text-[#191919] text-center">
+                      <p className="font-belleza text-[18px] sm:text-[24px] md:text-[28px] lg:text-[30px] text-[#191919] text-center">
                         {title}
                       </p>
 

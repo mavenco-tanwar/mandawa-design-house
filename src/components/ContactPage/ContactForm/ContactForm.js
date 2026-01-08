@@ -80,7 +80,7 @@ const ContactForm = () => {
     <section className="py-20 px-4">
       <div className="max-w-[1280px] mx-auto flex flex-col gap-10">
         <div className="text-center">
-          <h3 className="font-belleza text-2xl sm:text-3xl md:text-4xl text-[#191919]">
+          <h3 className="font-belleza text-2xl sm:text-3xl md:text-4xl text-[#42393B]">
             Contact Form
           </h3>
         </div>

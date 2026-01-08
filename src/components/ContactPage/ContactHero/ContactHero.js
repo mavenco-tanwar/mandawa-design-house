@@ -6,7 +6,7 @@ const ContactHero = ({title, imageUrl}) => {
     <section className="py-[60px] px-4">
       <div className="max-w-[1280px] mx-auto flex flex-col gap-[40px]">
         <div className="flex justify-center items-center">
-          <h1 className="font-belleza text-5xl md:text-5xl lg:text-6xl text-[#191919] text-center">
+          <h1 className="font-belleza text-5xl md:text-5xl lg:text-6xl text-[#3FA291] text-center">
             {title}
           </h1>
         </div>
