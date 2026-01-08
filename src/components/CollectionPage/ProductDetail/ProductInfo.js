@@ -14,12 +14,12 @@ const ProductInfo = ({ product }) => {
         <div className="grid grid-cols-1 lg:grid-cols-[minmax(500px,760px)_minmax(400px,460px)] gap-10 lg:gap-[60px]">
           {/* Left side - Images */}
           <div className="lg:grid lg:grid-cols-[160px_minmax(300px,1fr)] lg:gap-5">
-            <div className="relative w-full h-[30vh] sm:h-[50vh] md:h-[75vh] lg:h-[580px] order-1 lg:order-2 bg-[#fff]">
+            <div className="relative w-full h-[30vh] sm:h-[50vh] md:h-[75vh] lg:h-[580px] order-1 lg:order-2 bg-[#fff] shadow-[0_4px_8px_#0000004d] rounded-lg">
               <Image
                 src={product.images?.[activeIndex] ?? "/images/placeholder.png"}
                 fill
                 alt={product.title}
-                className="object-contain"
+                className="object-cover rounded-lg"
                 priority
               />
             </div>
@@ -30,13 +30,13 @@ const ProductInfo = ({ product }) => {
                   key={idx}
                   onMouseEnter={() => setActiveIndex(idx)}
                   onClick={() => setActiveIndex(idx)}
-                  className={`relative w-[100px] h-[100px] sm:w-[110px] sm:h-[110px] lg:w-[160px] lg:h-[160px] flex-shrink-0 cursor-pointer`}
+                  className={`relative w-[100px] h-[100px] sm:w-[110px] sm:h-[110px] lg:w-[160px] lg:h-[160px] flex-shrink-0 cursor-pointer rounded-lg`}
                 >
                   <Image
                     src={img}
                     fill
                     alt={`${product.title} ${idx + 1}`}
-                    className="object-cover rounded-md"
+                    className="object-cover shadow-[0_4px_8px_#0000004d] rounded-lg"
                   />
                 </div>
               ))}

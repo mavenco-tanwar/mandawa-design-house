@@ -34,7 +34,7 @@ const CollectionHero = ({ category }) => {
                 key={index}
                 onMouseEnter={() => setActiveIndex(index)}
                 onMouseLeave={() => setActiveIndex(0)}
-                className={`relative overflow-hidden rounded-lg transition-all duration-500 cursor-pointer 
+                className={`relative overflow-hidden rounded-lg transition-all duration-500 cursor-pointer shadow-[0_4px_8px_#0000004d] rounded-lg 
                   ${activeIndex === index ? "flex-[3]" : "flex-[1]"}`}
               >
                 <Image

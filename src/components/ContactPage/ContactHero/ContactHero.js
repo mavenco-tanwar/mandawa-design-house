@@ -11,12 +11,12 @@ const ContactHero = ({title, imageUrl}) => {
           </h1>
         </div>
 
-        <div className="relative hidden lg:block w-full h-[330px] sm:h-[330px] md:h-[330px]">
+        <div className="relative hidden lg:block w-full h-[330px] sm:h-[330px] md:h-[330px] shadow-[0_4px_8px_#0000004d] rounded-lg">
           <Image
             src={imageUrl}
             alt="Contact page hero"
             fill
-            className="object-cover rounded-md"
+            className="object-cover rounded-lg"
           />
         </div>
       </div>

@@ -36,12 +36,12 @@ const AboutHero = () => {
             </div>
           </div>
           <div className="flex gap-2 xl:h-[470px]">
-            <div className="relative h-[470px] flex-1">
+            <div className="relative h-[470px] flex-1 shadow-[0_4px_8px_#0000004d] rounded-lg">
               <Image
                 src={"/images/global/image 28.png"}
                 alt="working images"
                 fill
-                className="object-cover"
+                className="object-cover rounded-lg"
               />
             </div>
           </div>

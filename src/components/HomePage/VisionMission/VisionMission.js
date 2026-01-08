@@ -6,7 +6,7 @@ const VisionMission = () => {
       <div className="max-w-[1280px] mx-auto">
         <div className="grid grid-rows-[1fr_480px] xl:grid-rows-1 lg:grid-cols-2 gap-35 xl:gap-20 items-center">
           <div className="flex gap-2 xl:h-[600PX]">
-            <div className="relative h-[480px] lg:top-[75px] flex-1">
+            <div className="relative h-[480px] lg:top-[75px] flex-1 shadow-[0_4px_8px_#0000004d] rounded-lg">
               <Image
                 src={"/images/global/image 40.png"}
                 alt="working images"
@@ -14,7 +14,7 @@ const VisionMission = () => {
                 className="object-cover rounded-lg"
               />
             </div>
-            <div className="flex-1 h-[480px] relative">
+            <div className="flex-1 h-[480px] relative shadow-[0_4px_8px_#0000004d] rounded-lg">
               <Image
                 src={"/images/global/image 37.png"}
                 alt="machine image"
@@ -22,7 +22,7 @@ const VisionMission = () => {
                 className="object-cover rounded-lg"
               />
             </div>
-            <div className="relative h-[480px] lg:top-[75px] flex-1">
+            <div className="relative h-[480px] lg:top-[75px] flex-1 shadow-[0_4px_8px_#0000004d] rounded-lg">
             <div className="flex-1 h-[480px] relative">
               <Image
                 src={"/images/global/image 35.png"}

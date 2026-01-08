@@ -44,7 +44,7 @@ const CollectionsGroup = ({ collections = [], type = "collection" }) => {
                     className="relative flex flex-col gap-[15px] sm:gap-[20px] cursor-pointer group"
                     onClick={() => handleInteraction(index)}
                   >
-                    <div className="relative w-full aspect-[4/5]">
+                    <div className="relative w-full aspect-[4/5] rounded-lg">
                       <Image
                         src={imageSrc}
                         fill
@@ -52,7 +52,7 @@ const CollectionsGroup = ({ collections = [], type = "collection" }) => {
              (max-width: 1200px) 50vw, 
              33vw"
                         alt={type === "product" ? `Product: ${title}` : `Image of ${title}`}
-                        className="object-cover"
+                        className="object-cover shadow-[0_4px_8px_#0000004d] rounded-lg"
                         priority={index < 3}
                       />
 

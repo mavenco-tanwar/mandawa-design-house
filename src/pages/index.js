@@ -37,8 +37,8 @@ import VisionFuture from "@/components/HomePage/VisionFuture/VisionFuture";
    {/* <DesigningSoftware/> */}
    {/* <OurClients/> */}
    <VisionFuture />
-   <WhyChooseUs/>   
-   <FurnitureCollection/>
+   {/* <WhyChooseUs/>    */}
+   {/* <FurnitureCollection/> */}
    </>
   );
 }
