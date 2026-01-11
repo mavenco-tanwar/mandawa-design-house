@@ -84,14 +84,14 @@ const CollectionsGroup = ({ collections = [], type = "collection" }) => {
                           {/* Tag (static on mobile) */}
                           {type === "product" && (
                             <p className="font-poppins text-[12px] md:text-lg mt-2">
-                              {item.tag ? item.tag : "tag"}
+                              {item.tag ? item.tag : ""}
                             </p>
                           )}
 
                           {/* Size (static on mobile) */}
                           {type === "product" && (
                             <p className="font-poppins text-[12px] md:text-lg mt-2">
-                              {item.size ? item.size : "size"}
+                              {item.size ? item.size : ""}
                             </p>
                           )}
                         </div>
@@ -110,7 +110,7 @@ const CollectionsGroup = ({ collections = [], type = "collection" }) => {
                     >
                       {type === "product" && (
                         <p className="text-gray-600 font-poppins text-[12px] md:text-lg mt-2">
-                          {item.tag ? `${item.tag}` : "tag"}
+                          {item.tag ? `${item.tag}` : ""}
                         </p>
                       )}
                       <p className="font-belleza text-[18px] sm:text-[24px] md:text-[28px] lg:text-[30px] text-[#191919] text-center">
@@ -119,7 +119,7 @@ const CollectionsGroup = ({ collections = [], type = "collection" }) => {
 
                       {type === "product" && (
                         <p className="text-gray-600 font-poppins text-[12px] md:text-lg mt-2">
-                          {item.size ? `${item.size}` : "size"}
+                          {item.size ? `${item.size}` : ""}
                         </p>
                       )}
                     </div>
