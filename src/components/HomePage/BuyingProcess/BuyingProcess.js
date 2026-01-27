@@ -11,24 +11,24 @@ export default function BuyingProcess() {
       </div>
           <ol className="space-y-2 text-gray-600 text-sm sm:text-base tracking-wide">
             <li className="flex justify-center items-start">
-              <span className="tracking-wide text-xl w-50">1.</span>
-              <span className="uppercase tracking-wide text-xl w-[400px]">Browse the collection</span>
+              <span className="tracking-wide text-md md:text-xl md:w-50">1.</span>
+              <span className="uppercase tracking-wide text-md md:text-xl w-[400px]">Browse the collection</span>
             </li>
             <li className="flex justify-center items-start">
-              <span className="tracking-wide text-xl w-50">2.</span>
-              <span className="uppercase tracking-wide text-xl w-[400px]">Submit and enquiry</span>
+              <span className="tracking-wide text-md md:text-xl md:w-50">2.</span>
+              <span className="uppercase tracking-wide text-md md:text-xl w-[400px]">Submit and enquiry</span>
             </li>
             <li className="flex justify-center items-start">
-              <span className="tracking-wide text-xl w-50">3.</span>
-              <span className="uppercase tracking-wide text-xl w-[400px]">Receive quotation and timelines</span>
+              <span className="tracking-wide text-md md:text-xl md:w-50">3.</span>
+              <span className="uppercase tracking-wide text-md md:text-xl w-[400px]">Receive quotation and timelines</span>
             </li>
             <li className="flex justify-center items-start">
-              <span className="tracking-wide text-xl w-50">4.</span>
-              <span className="uppercase tracking-wide text-xl w-[400px]">Confirm order and payment</span>
+              <span className="tracking-wide text-md md:text-xl md:w-50">4.</span>
+              <span className="uppercase tracking-wide text-md md:text-xl w-[400px]">Confirm order and payment</span>
             </li>
             <li className="flex justify-center items-start">
-              <span className="tracking-wide text-xl w-50">5.</span>
-              <span className="uppercase tracking-wide text-xl w-[400px]">Production and delivery</span>
+              <span className="tracking-wide text-md md:text-xl md:w-50">5.</span>
+              <span className="uppercase tracking-wide text-md md:text-xl w-[400px]">Production and delivery</span>
             </li>
           </ol>
         </section>

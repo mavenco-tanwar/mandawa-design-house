@@ -10,7 +10,7 @@ const AboutHero = () => {
       </div>
       <div className="max-w-[1280px] mx-auto">
         <div className="grid grid-rows-[1fr_480px] xl:grid-rows-1 lg:grid-cols-2 gap-10 xl:gap-30 items-center">
-          <div className="pl-[80px]">
+          <div className="pb-10 md:pl-[80px]">
             {/* <div className="flex flex-col gap-3.5 text-left mb-10">
               <h2 className="text-4xl md:text-4xl font-belleza text-[#3FA291]">
                 Who We Are

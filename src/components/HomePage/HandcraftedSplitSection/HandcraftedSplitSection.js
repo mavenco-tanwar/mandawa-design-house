@@ -13,17 +13,17 @@ export default function HandcraftedSplitSection() {
       </div>
 
       {/* SUB COPY */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-24 text-center items-center md:text-left mb-5">
-        <p className="uppercase tracking-widest text-lg md:text-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-24 text-center items-center md:text-left mb-5">
+        <p className="uppercase tracking-widest text-md md:text-lg md:text-center">
           For those who value authenticity.
         </p>
-        <p className="uppercase tracking-widest text-lg md:text-center">
+        <p className="uppercase tracking-widest text-md md:text-lg md:text-center">
           B2B furniture for brands that choose depth over mass production.
         </p>
       </div>
 
       {/* IMAGE CARDS */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-24">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-24">
 
         {/* LEFT CARD */}
         <div className="relative overflow-hidden rounded-[32px] shadow-2xl">

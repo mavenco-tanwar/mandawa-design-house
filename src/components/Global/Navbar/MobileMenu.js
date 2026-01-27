@@ -34,12 +34,12 @@ function MobileMenu() {
             >
               Home
             </Link>
-            {/* <Link
+            <Link
               href="/about"
               className="text-[#42393B] text-2xl font-medium capitalize flex items-center hover:text-black px-4 w-full"
             >
               About
-            </Link> */}
+            </Link>
 
             <Link
               href="/collection"
