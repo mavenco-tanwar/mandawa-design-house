@@ -184,4 +184,10 @@ BlogPage.getLayout = function getLayout(page) {
   return <MainLayout>{page}</MainLayout>;
 };
 
+export async function getServerSideProps(context) {
+  return {
+    props: {},
+  };
+}
+
 export default BlogPage;
