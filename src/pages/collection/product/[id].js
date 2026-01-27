@@ -1,9 +1,9 @@
 import MainLayout from "@/Layouts/MainLayout";
 import BreadCrumb from "@/components/Global/BreadCrumb/BreadCrumb";
-import ProductSlider from "@/components/CollectionPage/ProductSlider/ProductSlider";
+import UniversalSlider from "@/components/CollectionPage/ProductSlider/ProductSlider";
 import ProductInfo from "@/components/CollectionPage/ProductDetail/ProductInfo";
 
-const ProductPage = ({ product, relatedProducts, productId }) => {
+const ProductPage = ({ product, relatedProducts }) => {
   if (!product) {
     return (
       <div className="py-20 text-center">
@@ -12,11 +12,31 @@ const ProductPage = ({ product, relatedProducts, productId }) => {
     );
   }
 
+  // ✅ Normalize product data for slider
+  const relatedProductSlides = relatedProducts.map((item) => ({
+    id: item.id,
+    title: item.title,
+    tag: item.tag || item.category?.name,
+    image: item.images?.[0],
+    href: `/collection/product/${item.id}`,
+  }));
+
   return (
     <>
-      <BreadCrumb category={product.category} productTitle={product.title} />
+      <BreadCrumb
+        category={product.category}
+        productTitle={product.title}
+      />
+
       <ProductInfo product={product} />
-      <ProductSlider items={relatedProducts} />
+
+      {/* ✅ Reusable slider */}
+      {relatedProductSlides.length > 0 && (
+        <UniversalSlider
+          heading="Related Products"
+          items={relatedProductSlides}
+        />
+      )}
     </>
   );
 };
@@ -42,7 +62,12 @@ export async function getServerSideProps({ params }) {
       },
     };
   } catch (error) {
-    return { props: { product: null, relatedProducts: [] } };
+    return {
+      props: {
+        product: null,
+        relatedProducts: [],
+      },
+    };
   }
 }
 

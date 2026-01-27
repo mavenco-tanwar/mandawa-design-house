@@ -1,11 +1,11 @@
 import MainLayout from '@/Layouts/MainLayout';
 import React from 'react'
-import AboutHero from '@/components/AboutPage/AboutHero/AboutHero';
+import AboutHeroN from '@/components/AboutPage/AboutHero/AboutHeroN';
 
 const About = () => {
   return (
 <>
-<AboutHero />
+<AboutHeroN />
 </>
   )
 }

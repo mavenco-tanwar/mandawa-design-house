@@ -17,28 +17,35 @@ import AboutHero from '@/components/AboutPage/AboutHero/AboutHero';
 
 import MainLayout from "@/Layouts/MainLayout";
 import VisionFuture from "@/components/HomePage/VisionFuture/VisionFuture";
+import HandcraftedSplitSection from "@/components/HomePage/HandcraftedSplitSection/HandcraftedSplitSection";
+import BuyingProcess from "@/components/HomePage/BuyingProcess/BuyingProcess";
+import CollectionsGroup from "@/components/CollectionPage/CollectionsGroup";
+import Footer from "@/components/Global/FooterN/FooterN";
 
 
- function Home() {
+ function Home({collections}) {
   return (
    <>
    <MandawaHomeImage/>
+   <HandcraftedSplitSection />
 <AboutHero />
+<BuyingProcess />
    {/* <Hero/> */}
-    <VisionMission/>
+    {/* <VisionMission/> */}
    {/* <OrganizationChart/> */}
    {/* <OurUnits/> */}
     {/* <ManufacturingSection/> */}
     {/* <WoodenMachinery/> */}
    {/* <OurSetUp/> */}
-   <FurnitureDesigning/>
+   {/* <FurnitureDesigning/> */}
    {/* <ConceptOfDrawing/> */}
    {/* <ProductionDrawing/> */}
    {/* <DesigningSoftware/> */}
    {/* <OurClients/> */}
-   <VisionFuture />
+   {/* <VisionFuture /> */}
    {/* <WhyChooseUs/>    */}
    {/* <FurnitureCollection/> */}
+    <CollectionsGroup key={`home-collection-${collections.length}`} collections={collections} type="collection" title="DISCOVER OUR COLLECTION" />
    </>
   );
 }
@@ -47,6 +54,34 @@ import VisionFuture from "@/components/HomePage/VisionFuture/VisionFuture";
 Home.getLayout = function getLayout(page) {
   return <MainLayout>{page}</MainLayout>;
 };
+
+export async function getServerSideProps(context) {
+  try {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/categories`);
+
+    if (!res.ok) {
+      throw new Error(`Failed to fetch categories: ${res.status}`);
+    }
+
+    const data = await res.json();
+
+    const collections = (
+      Array.isArray(data) ? data : data.data || data.categories || []
+    ).map((item) => ({
+      id: item.id,
+      title: item.name ?? item.title ?? "Untitled",
+      image_url: item.image_url ?? "/images/placeholder.png",
+    }));
+
+    return {
+      props: { collections },
+    };
+  } catch (err) {
+    return {
+      props: { collections: [] },
+    };
+  }
+}
 
 
 export default Home

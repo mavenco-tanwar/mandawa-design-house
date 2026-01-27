@@ -12,6 +12,7 @@
     "@fontsource/belleza": "^5.2.6",
     "@iconify-icon/react": "^3.0.0",
     "clsx": "^2.1.1",
+    "lucide-react": "^0.563.0",
     "next": "^16.1.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",

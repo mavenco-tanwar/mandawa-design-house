@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
 
-const CollectionsGroup = ({ collections = [], type = "collection" }) => {
+const CollectionsGroup = ({ collections = [], type = "collection", title }) => {
   const isMobile = useMediaQuery("(max-width: 1024px)");
   const [activeIndex, setActiveIndex] = React.useState(null);
 
@@ -26,7 +26,10 @@ const CollectionsGroup = ({ collections = [], type = "collection" }) => {
   }
 
   return (
-    <section className="bg-[#F6F4EE]">
+    <section className="bg-[#fff]">
+      <h2 className="uppercase tracking-wide text-xl md:text-3xl font-serif text-[#000] mx-auto text-center">
+         {title}
+        </h2>
       <div className="p-[40px] sm:px-6 md:p-[60px]">
         <div className="max-w-[1280px] m-auto flex flex-col gap-[40px] sm:gap-[50px] md:gap-[60px]">
           <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10">

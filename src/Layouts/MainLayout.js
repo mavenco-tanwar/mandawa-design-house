@@ -1,12 +1,12 @@
-import Footer from '@/components/Global/Footer/Footer'
-
+"use client"
 import Navbar from '@/components/Global/Navbar/Navbar'
-import React from 'react'
+import Footer from '@/components/Global/FooterN/FooterN'
 
-const MainLayout = ({children}) => {
+const MainLayout = ({ children }) => {
+
   return (
     <>
-         <Navbar />
+      <Navbar />
       {children}
       <Footer />
     </>

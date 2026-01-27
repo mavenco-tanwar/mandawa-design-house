@@ -24,3 +24,10 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.nav-link {
+  @apply relative text-[22px] tracking-widest text-white
+         after:absolute after:bottom-0 after:left-0
+         after:h-[1px] after:w-full after:bg-white after:content-[''];
+}
+

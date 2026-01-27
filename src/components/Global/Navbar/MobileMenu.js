@@ -24,7 +24,7 @@ function MobileMenu() {
 
   return (
     <div className="block  md:hidden">
-{isMenuOpen ? (<Icon icon="iconoir:cancel" width="26" height="26" className="block md:hidden text-[#191919]" onClick={toggleMenu}    />) : (<Icon icon="mynaui:menu" width="24" height="24" className="block md:hidden text-[#191919]"  onClick={toggleMenu} />)}
+{isMenuOpen ? (<Icon icon="iconoir:cancel" width="26" height="26" className="block md:hidden text-white" onClick={toggleMenu}    />) : (<Icon icon="mynaui:menu" width="24" height="24" className="block md:hidden text-white"  onClick={toggleMenu} />)}
       {isMenuOpen && (
         <div className=" py-[40px] absolute top-20 left-0 w-full h-[calc(100vh-80px)] bg-white shadow-md md:hidden flex justify-center  px-5">
           <div className="flex flex-col gap-16 w-full">
