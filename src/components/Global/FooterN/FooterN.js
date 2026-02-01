@@ -24,7 +24,7 @@ const Footer = () => {
           </Link>
 
           <Link
-            href="/contact"
+            href="/contact-us"
             className="uppercase tracking-widest text-xl font-serif hover:opacity-60 transition"
           >
             Contact Us
@@ -52,7 +52,7 @@ const Footer = () => {
 
           {/* Right - Social Icons */}
           <div className="flex justify-center md:justify-end gap-6">
-                <Link href="https://www.linkedin.com/in/mandawadesignhouse/"><Image className="cursor-pointer" src={"/images/global/linkedin.svg"} width={24} height={24} alt="LinkedIn" /></Link>
+                {/* <Link href="https://www.linkedin.com/in/mandawadesignhouse/"><Image className="cursor-pointer" src={"/images/global/linkedin.svg"} width={24} height={24} alt="LinkedIn" /></Link> */}
                 <Link href="https://www.instagram.com/mandawa_design_house?igsh=MzR5OHljMDNkYjR4"><Image className="cursor-pointer" src={"/images/homePageImages/instagram.png"} width={24} height={24} alt="Instagram" /></Link>
             <Link href="https://pin.it/4fhXXpTuk"><Image className="cursor-pointer" src={"/images/homePageImages/pinterest.png"} width={24} height={24} alt="pinterest" /></Link>
             <Link href="https://wa.me/919829823333"><Image className="cursor-pointer" src={"/images/homePageImages/whatsapp.png"} width={24} height={24} alt="whatsapp" /></Link>
