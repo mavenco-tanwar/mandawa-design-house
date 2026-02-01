@@ -2,6 +2,7 @@ import MainLayout from "@/Layouts/MainLayout";
 import BreadCrumb from "@/components/Global/BreadCrumb/BreadCrumb";
 import UniversalSlider from "@/components/CollectionPage/ProductSlider/ProductSlider";
 import ProductInfo from "@/components/CollectionPage/ProductDetail/ProductInfo";
+import ProductionDeliveryBuy from "@/components/CollectionPage/ProductDetail/ProductionDeliveryBuy";
 
 const ProductPage = ({ product, relatedProducts }) => {
   if (!product) {
@@ -29,6 +30,8 @@ const ProductPage = ({ product, relatedProducts }) => {
       />
 
       <ProductInfo product={product} />
+
+      <ProductionDeliveryBuy />
 
       {/* ✅ Reusable slider */}
       {relatedProductSlides.length > 0 && (

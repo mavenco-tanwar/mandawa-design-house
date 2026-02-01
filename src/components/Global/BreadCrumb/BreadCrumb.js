@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const BreadCrumb = ({ category, productTitle }) => {
   return (
-    <nav className="max-w-[1280px] mx-auto py-10 px-4">
+    <nav className="max-w-[1280px] mx-auto py-10 px-4 text-center">
       <span className="text-[#42393B] font-poppins text-[14px]">
         <Link className="mr-[6px]" href="/">
           Home
