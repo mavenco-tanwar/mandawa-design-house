@@ -171,7 +171,7 @@ straight cut.`,
                         src={item.img}
                         fill
                         alt={item.title}
-                        className="object-cover rounded-lg"
+                        className="object-cover  "
                       />
                       <div
                         className={`absolute inset-0 flex flex-col justify-center items-center text-center bg-black/60 px-4 transition-all duration-300
@@ -194,7 +194,7 @@ straight cut.`,
                           {item.title}
                         </h4>
                         <p
-                          className={`text-white text-sm sm:text-base lg:text-lg transition-all duration-300 max-w-[90%] 
+                          className={`text-white text-[12px] sm:text-base lg:text-lg transition-all duration-300 max-w-[90%] 
     max-h-[200px] overflow-y-auto scrollbar-thin scrollbar-thumb-white/30
                             ${isMobileOrTablet
                               ? isActive

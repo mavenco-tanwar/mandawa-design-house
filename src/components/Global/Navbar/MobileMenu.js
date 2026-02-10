@@ -24,33 +24,33 @@ function MobileMenu() {
 
   return (
     <div className="block  md:hidden">
-{isMenuOpen ? (<Icon icon="iconoir:cancel" width="26" height="26" className="block md:hidden text-white" onClick={toggleMenu}    />) : (<Icon icon="mynaui:menu" width="24" height="24" className="block md:hidden text-white"  onClick={toggleMenu} />)}
+{isMenuOpen ? (<Icon icon="iconoir:cancel" width="26" height="26" className="block md:hidden" onClick={toggleMenu}    />) : (<Icon icon="mynaui:menu" width="24" height="24" className="block md:hidden"  onClick={toggleMenu} />)}
       {isMenuOpen && (
-        <div className=" py-[40px] absolute top-20 left-0 w-full h-[calc(100vh-80px)] bg-white shadow-md md:hidden flex justify-center  px-5">
-          <div className="flex flex-col gap-16 w-full">
+        <div className=" py-[20px] absolute top-20 left-0 w-full h-[calc(100vh-80px)] bg-white shadow-md md:hidden flex justify-center  px-5">
+          <div className="flex flex-col gap-5 w-full">
             <Link
               href="/"
-              className="text-[#42393B] text-2xl font-medium capitalize flex items-center hover:text-black px-4 w-full"
+              className="text-[#42393B] text-[18px] font-medium capitalize flex items-center hover:text-black w-full"
             >
               Home
             </Link>
             <Link
               href="/about"
-              className="text-[#42393B] text-2xl font-medium capitalize flex items-center hover:text-black px-4 w-full"
+              className="text-[#42393B] text-[18px] font-medium capitalize flex items-center hover:text-black w-full"
             >
               About
             </Link>
 
             <Link
               href="/collection"
-              className="text-[#42393B] text-2xl font-medium capitalize flex items-center hover:text-black px-4 w-full"
+              className="text-[#42393B] text-[18px] font-medium capitalize flex items-center hover:text-black w-full"
             >
              Collection
             </Link>
 
             {/* <Link
               href="/blog"
-              className="text-[#42393B] text-2xl font-medium capitalize flex items-center hover:text-black px-4 w-full"
+              className="text-[#42393B] text-[18px] font-medium capitalize flex items-center hover:text-black w-full"
             >
               Blog
             </Link> */}

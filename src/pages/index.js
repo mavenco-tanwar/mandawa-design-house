@@ -28,7 +28,8 @@ import Footer from "@/components/Global/FooterN/FooterN";
    <>
    <MandawaHomeImage/>
    <HandcraftedSplitSection />
-<AboutHero />
+{/* <AboutHero /> */}
+<hr className="border-t border-gray-300" />
 <BuyingProcess />
    {/* <Hero/> */}
     {/* <VisionMission/> */}

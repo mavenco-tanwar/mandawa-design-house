@@ -24,14 +24,14 @@ const MainFooter = () => {
       <div className="flex flex-col gap-4">
         <div>
           <p className="underline font-belleza text-lg sm:text-xl md:text-2xl mb-[18px]">Address:</p>
-          <p className="text-sm sm:text-base md:text-lg font-poppins mt-1">
+          <p className="text-[12px] sm:text-base md:text-[12px] font-poppins mt-1">
             B-158, 1st Phase, RIICO Industrial<br />
             Area Manda, Chomu, 303702
           </p>
         </div>
         <div>
           <p className="underline font-belleza text-lg sm:text-xl md:text-2xl mb-[18px]">GSTIN:</p>
-          <p className="text-sm sm:text-base md:text-lg font-poppins mt-1">
+          <p className="text-[12px] sm:text-base md:text-[12px] font-poppins mt-1">
             08AAPCM1097H1Z2
           </p>
         </div>
@@ -39,17 +39,17 @@ const MainFooter = () => {
       <div className="flex flex-col gap-4">
         <p className="underline font-belleza text-lg sm:text-xl md:text-2xl">Contact Us:</p>
         <div className="flex flex-col gap-1">
-          <a href="tel:+919829823333" className="text-sm sm:text-base md:text-lg font-poppins">
+          <a href="tel:+919829823333" className="text-[12px] sm:text-base md:text-[12px] font-poppins">
             +91 9829823333
           </a>
-          <a href="tel:+917014447678" className="text-sm sm:text-base md:text-lg font-poppins">
+          <a href="tel:+917014447678" className="text-[12px] sm:text-base md:text-[12px] font-poppins">
             +91 7014447678
           </a>
         </div>
       </div>
       <div className="flex flex-col gap-4 break-words">
         <p className="underline font-belleza text-lg sm:text-xl md:text-2xl">Connect Us:</p>
-        <div className="flex flex-col gap-2 max-w-[330px] break-all font-poppins text-sm sm:text-base md:text-lg">
+        <div className="flex flex-col gap-2 max-w-[330px] break-all font-poppins text-[12px] sm:text-base md:text-[12px]">
           <a href="https://mandawadesignhouse.com/" target="_blank" rel="noopener noreferrer">
             https://mandawadesignhouse.com/
           </a>

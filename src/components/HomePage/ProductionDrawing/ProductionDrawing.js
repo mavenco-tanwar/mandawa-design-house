@@ -24,7 +24,7 @@ const ProductionDrawing = () => {
     <section className="py-[60px] px-4 bg-[#F6F4EE] overflow-hidden">
       <div className="max-w-[1280px] m-auto flex flex-col gap-[40px] overflow-hidden">
         <div className="flex justify-center">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-belleza text-[#3FA291] text-center">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-belleza  text-[#2f2a28] uppercase text-center">
             Production Drawing
           </h2>
         </div>

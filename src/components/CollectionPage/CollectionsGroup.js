@@ -26,11 +26,12 @@ const CollectionsGroup = ({ collections = [], type = "collection", title }) => {
   }
 
   return (
-    <section className="bg-[#fff]">
-      <h2 className="uppercase tracking-wide text-xl md:text-3xl font-serif text-[#000] mx-auto text-center">
+    <section className="bg-[#fff] w-full px-4 sm:px-6 lg:px-8">
+          <div className="w-full h-px bg-[#D8D5CF] mb-5 md:mb-10" />
+      <h2 className="uppercase tracking-wide text-[18px] md:text-[22px]  text-[#000] mx-auto text-center mb-5 md:mb-10">
          {title}
         </h2>
-      <div className="p-[40px] sm:px-6 md:p-[60px]">
+      <div className="py-3 md:py-6 md:p-[0px]">
         <div className="max-w-[1280px] m-auto flex flex-col gap-[40px] sm:gap-[50px] md:gap-[60px]">
           <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10">
             {collections.map((item, index) => {
@@ -47,7 +48,7 @@ const CollectionsGroup = ({ collections = [], type = "collection", title }) => {
                     className="relative flex flex-col gap-[15px] sm:gap-[20px] cursor-pointer group"
                     onClick={() => handleInteraction(index)}
                   >
-                    <div className="relative w-full aspect-[4/5] rounded-lg">
+                    <div className="relative w-full aspect-[4/5]  ">
                       <Image
                         src={imageSrc}
                         fill
@@ -55,7 +56,7 @@ const CollectionsGroup = ({ collections = [], type = "collection", title }) => {
              (max-width: 1200px) 50vw, 
              33vw"
                         alt={type === "product" ? `Product: ${title}` : `Image of ${title}`}
-                        className="object-cover shadow-[0_4px_8px_#0000004d] rounded-lg"
+                        className="object-cover shadow-[0_4px_8px_#0000004d]  "
                         priority={index < 3}
                       />
 
@@ -73,7 +74,7 @@ const CollectionsGroup = ({ collections = [], type = "collection", title }) => {
                         <div className="text-center text-white px-2">
                           {/* Title */}
                           <h4
-                            className={`transition-all duration-300 font-belleza text-[18px] sm:text-[24px] md:text-[28px] lg:text-[34px]
+                            className={`transition-all duration-300 font-belleza text-[12px]
             ${isMobile
                                 ? activeIndex === index
                                   ? "translate-y-0"
@@ -85,15 +86,15 @@ const CollectionsGroup = ({ collections = [], type = "collection", title }) => {
                           </h4>
 
                           {/* Tag (static on mobile) */}
-                          {type === "product" && (
-                            <p className="font-poppins text-[12px] md:text-lg mt-2">
+                          {/* {type === "product" && (
+                            <p className="font-poppins text-[12px] md:text-[12px] mt-2">
                               {item.tag ? item.tag : ""}
                             </p>
-                          )}
+                          )} */}
 
                           {/* Size (static on mobile) */}
                           {type === "product" && (
-                            <p className="font-poppins text-[12px] md:text-lg mt-2">
+                            <p className="font-poppins text-[12px] md:text-[12px] mt-2">
                               {item.size ? item.size : ""}
                             </p>
                           )}
@@ -111,17 +112,17 @@ const CollectionsGroup = ({ collections = [], type = "collection", title }) => {
                           : "bottom-0 opacity-100 group-hover:bottom-3 group-hover:opacity-0"
                         }`}
                     >
-                      {type === "product" && (
-                        <p className="text-gray-600 font-poppins text-[12px] md:text-lg mt-2">
+                      {/* {type === "product" && (
+                        <p className="text-gray-600 font-poppins text-[12px] md:text-[12px] mt-2">
                           {item.tag ? `${item.tag}` : ""}
                         </p>
-                      )}
-                      <p className="font-belleza text-[18px] sm:text-[24px] md:text-[28px] lg:text-[30px] text-[#191919] text-center">
+                      )} */}
+                      <p className="font-belleza text-[12px] text-[#191919] text-center">
                         {title}
                       </p>
 
                       {type === "product" && (
-                        <p className="text-gray-600 font-poppins text-[12px] md:text-lg mt-2">
+                        <p className="text-gray-600 font-poppins text-[12px] md:text-[12px] mt-2">
                           {item.size ? `${item.size}` : ""}
                         </p>
                       )}

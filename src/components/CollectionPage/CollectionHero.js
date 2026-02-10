@@ -16,14 +16,14 @@ const CollectionHero = ({ category }) => {
       ];
 
   return (
-    <section className="p-[40px] md:p-[80px] bg-white">
+    <section className="p-[20px] md:p-[80px] bg-white">
       <div className="max-w-[1280px] mx-auto">
         <div className="flex gap-10 xl:gap-[40px] items-center">
           <div className="w-fit md:w-[400px] flex-shrink-0">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-belleza text-[#3FA291]">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-belleza  text-[#2f2a28] uppercase">
               {category?.name ?? "Our Collection"}
             </h2>
-            <p className="mt-4 font-poppins text-base md:text-lg text-[#42393B]">
+            <p className="mt-4 font-poppins text-[12px] text-[#42393B]">
               {category?.description ?? "More than furniture, this is an experience. Our collection is a testament to the harmony of craft and comfort, created to transform ordinary seating into extraordinary moments of ease."}
             </p>
           </div>
@@ -34,7 +34,7 @@ const CollectionHero = ({ category }) => {
                 key={index}
                 onMouseEnter={() => setActiveIndex(index)}
                 onMouseLeave={() => setActiveIndex(0)}
-                className={`relative overflow-hidden rounded-lg transition-all duration-500 cursor-pointer shadow-[0_4px_8px_#0000004d] rounded-lg 
+                className={`relative overflow-hidden   transition-all duration-500 cursor-pointer shadow-[0_4px_8px_#0000004d]   
                   ${activeIndex === index ? "flex-[3]" : "flex-[1]"}`}
               >
                 <Image

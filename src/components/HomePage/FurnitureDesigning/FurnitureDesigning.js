@@ -12,7 +12,7 @@ const FurnitureDesigning = () => {
         <div className="grid grid-rows-[1fr_480px] xl:grid-rows-1 lg:grid-cols-2 gap-10 xl:gap-20 items-center">
           <div>
             <div className="max-w-[1035px] flex mb-10 flex-col gap-3.5">
-              <h2 className="text-4xl md:text-4xl font-belleza text-[#3FA291]">
+              <h2 className="text-4xl md:text-4xl font-belleza  text-[#2f2a28]">
                 Our Specialisation
               </h2>
               <p className="font-poppins text-base md:text-md text-[#42393B] leading-relaxed">
@@ -23,7 +23,7 @@ const FurnitureDesigning = () => {
               </p>
             </div>
             <div className="max-w-[1035px] flex flex-col gap-3.5">
-              <h2 className="text-4xl md:text-4xl font-belleza text-[#3FA291]">
+              <h2 className="text-4xl md:text-4xl font-belleza  text-[#2f2a28]">
                 Who We Work With
               </h2>
               <p className="font-poppins text-base md:text-md text-[#42393B] leading-relaxed">
@@ -35,12 +35,12 @@ const FurnitureDesigning = () => {
             </div>
           </div>
           <div className="flex gap-2 xl:h-[430px]">
-            <div className="relative h-[430px] flex-1 shadow-[0_4px_8px_#0000004d] rounded-lg">
+            <div className="relative h-[430px] flex-1 shadow-[0_4px_8px_#0000004d]  ">
               <Image
                 src={"/images/global/image 30.png"}
                 alt="working images"
                 fill
-                className="object-cover rounded-lg"
+                className="object-cover  "
               />
             </div>
           </div>

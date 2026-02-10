@@ -1,34 +1,34 @@
 export default function BuyingProcess() {
   return (
-    <div className="w-full py-16 px-4 sm:px-6 lg:px-8">
+    <div className="w-full py-10 px-4 sm:px-6 lg:px-8">
       <div className="max-w-[1400px] mx-auto">
         {/* How to Buy Section */}
         <section className="text-center mb-10">
-        <div className="text-center mx-auto mb-10">
-            <h2 className="uppercase tracking-wide text-xl md:text-4xl font-serif text-[#000]">
+        <div className="text-center mx-auto mb-5 md:mb-10">
+            <h2 className="uppercase tracking-wide text-[18px] md:text-[22px]  text-[#000]">
                 HOW TO BUY
             </h2>
       </div>
-          <ol className="space-y-2 text-gray-600 text-sm sm:text-base tracking-wide">
+          <ol className="space-y-2 md:flex text-black text-[12px] gap-8 justify-center sm:text-base tracking-wide">
             <li className="flex justify-center items-start">
-              <span className="tracking-wide text-md md:text-xl md:w-50">1.</span>
-              <span className="uppercase tracking-wide text-md md:text-xl w-[400px]">Browse the collection</span>
+              <span className="tracking-wide text-md md:text-[12px] md:w-10">1.</span>
+              <span className="uppercase tracking-wide text-md md:text-[12px] text-left">Browse the collection</span>
             </li>
             <li className="flex justify-center items-start">
-              <span className="tracking-wide text-md md:text-xl md:w-50">2.</span>
-              <span className="uppercase tracking-wide text-md md:text-xl w-[400px]">Submit and enquiry</span>
+              <span className="tracking-wide text-md md:text-[12px] md:w-10">2.</span>
+              <span className="uppercase tracking-wide text-md md:text-[12px] text-left">Submit and enquiry</span>
             </li>
             <li className="flex justify-center items-start">
-              <span className="tracking-wide text-md md:text-xl md:w-50">3.</span>
-              <span className="uppercase tracking-wide text-md md:text-xl w-[400px]">Receive quotation and timelines</span>
+              <span className="tracking-wide text-md md:text-[12px] md:w-10">3.</span>
+              <span className="uppercase tracking-wide text-md md:text-[12px] text-left">Receive quotation and timelines</span>
             </li>
             <li className="flex justify-center items-start">
-              <span className="tracking-wide text-md md:text-xl md:w-50">4.</span>
-              <span className="uppercase tracking-wide text-md md:text-xl w-[400px]">Confirm order and payment</span>
+              <span className="tracking-wide text-md md:text-[12px] md:w-10">4.</span>
+              <span className="uppercase tracking-wide text-md md:text-[12px] text-left">Confirm order and payment</span>
             </li>
             <li className="flex justify-center items-start">
-              <span className="tracking-wide text-md md:text-xl md:w-50">5.</span>
-              <span className="uppercase tracking-wide text-md md:text-xl w-[400px]">Production and delivery</span>
+              <span className="tracking-wide text-md md:text-[12px] md:w-10">5.</span>
+              <span className="uppercase tracking-wide text-md md:text-[12px] text-left">Production and delivery</span>
             </li>
           </ol>
         </section>
@@ -38,13 +38,13 @@ export default function BuyingProcess() {
 
         {/* Packaging Section */}
         <section className="text-center">
-                  <div className="text-center mx-auto mb-10">
-            <h2 className="uppercase tracking-wide text-xl md:text-4xl font-serif text-[#000]">
+                  <div className="text-center mx-auto mb-5 md:mb-10">
+            <h2 className="uppercase tracking-wide text-[18px] md:text-[22px]  text-[#000]">
                PACKAGING & WORLDWIDE SHIPPING
             </h2>
       </div>
 
-          <p className="uppercase tracking-wide text-xl">
+          <p className="uppercase tracking-wide text-[14px] md:text-[16px]">
             We use professional export-grade packaging to ensure your furniture arrives.
             <br className="hidden sm:block" />
             safely, wherever you are in the world.

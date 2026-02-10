@@ -6,36 +6,36 @@ const VisionMission = () => {
       <div className="max-w-[1280px] mx-auto">
         <div className="grid grid-rows-[1fr_480px] xl:grid-rows-1 lg:grid-cols-2 gap-35 xl:gap-20 items-center">
           <div className="flex gap-2 xl:h-[600PX]">
-            <div className="relative h-[480px] lg:top-[75px] flex-1 shadow-[0_4px_8px_#0000004d] rounded-lg">
+            <div className="relative h-[480px] lg:top-[75px] flex-1 shadow-[0_4px_8px_#0000004d]  ">
               <Image
                 src={"/images/global/image 40.png"}
                 alt="working images"
                 fill
-                className="object-cover rounded-lg"
+                className="object-cover  "
               />
             </div>
-            <div className="flex-1 h-[480px] relative shadow-[0_4px_8px_#0000004d] rounded-lg">
+            <div className="flex-1 h-[480px] relative shadow-[0_4px_8px_#0000004d]  ">
               <Image
                 src={"/images/global/image 37.png"}
                 alt="machine image"
                 fill
-                className="object-cover rounded-lg"
+                className="object-cover  "
               />
             </div>
-            <div className="relative h-[480px] lg:top-[75px] flex-1 shadow-[0_4px_8px_#0000004d] rounded-lg">
+            <div className="relative h-[480px] lg:top-[75px] flex-1 shadow-[0_4px_8px_#0000004d]  ">
             <div className="flex-1 h-[480px] relative">
               <Image
                 src={"/images/global/image 35.png"}
                 alt="machine image"
                 fill
-                className="object-cover rounded-lg"
+                className="object-cover  "
               />
             </div>
             </div>
           </div>
           <div>
             <div className="flex flex-col gap-3.5 text-left mb-10">
-              <h2 className="text-4xl md:text-4xl font-belleza text-[#3FA291]">
+              <h2 className="text-4xl md:text-4xl font-belleza  text-[#2f2a28]">
                 Handcrafted by Artists, Not Assembly Lines
               </h2>
               <p className="font-poppins text-base md:text-md text-[#42393B]">
@@ -49,7 +49,7 @@ const VisionMission = () => {
               </p>
             </div>
             <div className="flex flex-col gap-3.5 text-left">
-              <h2 className="text-4xl md:text-4xl font-belleza text-[#3FA291]">
+              <h2 className="text-4xl md:text-4xl font-belleza  text-[#2f2a28]">
                 Preserving India’s Disappearing Art Forms
               </h2>
               <p className="font-poppins text-base md:text-md text-[#42393B]">

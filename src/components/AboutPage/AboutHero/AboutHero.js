@@ -3,8 +3,8 @@ import Image from "next/image";
 const AboutHero = () => {
   return (
     <section className="py-[80px] px-4 bg-white" style={{ boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px" }}>
-      <div className="text-center mx-auto mb-10">
-        <h2 className="uppercase tracking-wide text-xl md:text-2xl font-serif text-[#42393B]">
+      <div className="text-center mx-auto mb-5 md:mb-10">
+        <h2 className="uppercase tracking-wide text-xl md:text-[22px]   text-[#42393B]">
          CRAFTSMANSHIP - WHERE HERITAGE MEETS SKILL 
         </h2>
       </div>
@@ -12,7 +12,7 @@ const AboutHero = () => {
         <div className="grid grid-rows-[1fr_480px] xl:grid-rows-1 lg:grid-cols-2 gap-10 xl:gap-30 items-center">
           <div className="pb-10 md:pl-[80px]">
             {/* <div className="flex flex-col gap-3.5 text-left mb-10">
-              <h2 className="text-4xl md:text-4xl font-belleza text-[#3FA291]">
+              <h2 className="text-4xl md:text-4xl font-belleza  text-[#2f2a28]">
                 Who We Are
               </h2>
               <p className="font-poppins text-base md:text-md text-[#42393B]">
@@ -26,27 +26,27 @@ const AboutHero = () => {
               </p>
             </div> */}
             <div className="flex flex-col gap-12 text-left">
-              {/* <h2 className="text-4xl md:text-4xl font-belleza text-[#3FA291]">
+              {/* <h2 className="text-4xl md:text-4xl font-belleza  text-[#2f2a28]">
                 Our Philosophy: Legacy Over Volume
               </h2> */}
-              <p className="uppercase tracking-wide text-xl md:text-xl font-serif text-black text-center">
+              <p className="uppercase tracking-wide text-xl md:text-[12px]   text-black text-center">
                 At Mandawa Design House, wood is shaped into furniture through craft, patience, and intention.
               </p>
-              <p className="uppercase tracking-wide text-xl md:text-xl font-serif text-black text-center">
+              <p className="uppercase tracking-wide text-xl md:text-[12px]   text-black text-center">
                  From vintage-inspired designs to custom creations, each piece is made to order—carrying detail, depth, and a story of its own.
               </p>
-              <p className="uppercase tracking-wide text-xl md:text-xl font-serif text-black text-center">
+              <p className="uppercase tracking-wide text-xl md:text-[12px]   text-black text-center">
                 Our furniture is crafted by experienced artisans using traditional hand tools and time-honoured techniques. Every piece reflects the imperfections that make handcrafted furniture truly unique.
               </p>
             </div>
           </div>
           <div className="flex gap-2 xl:h-[550px] xl:w-[480px]">
-            <div className="relative h-[550px] flex-1 shadow-[0_4px_8px_#0000004d] rounded-lg">
+            <div className="relative h-[550px] flex-1 shadow-[0_4px_8px_#0000004d]  ">
               <Image
                 src={"/images/homePageImages/CRAFTSMANSHIP.jpeg"}
                 alt="working images"
                 fill
-                className="object-cover rounded-lg"
+                className="object-cover  "
               />
             </div>
           </div>

@@ -1,9 +1,13 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import Button from "@/components/Global/Buttons";
 
 const ContactForm = () => {
+  const searchParams = useSearchParams();
+  const productId = searchParams.get("productId");
+  const productName = searchParams.get("productName");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -14,6 +18,15 @@ const ContactForm = () => {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
   const [errors, setErrors] = useState({});
+
+useEffect(() => {
+  if (productId && productName) {
+    setFormData((prev) => ({
+      ...prev,
+      message: `Hi, I am interested in this \n\nProduct Name: ${productName}\nProduct ID: ${productId}\n\nPlease share more details.`,
+    }));
+  }
+}, [productId, productName]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -77,10 +90,10 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="py-20 px-4">
+    <section className="py-10 md:py-20 px-4 pb-2">
       <div className="max-w-[1280px] mx-auto flex flex-col gap-10">
         <div className="text-center">
-          <h3 className="font-belleza text-2xl sm:text-3xl md:text-4xl text-[#42393B]">
+          <h3 className="text-4xl md:text-5xl lg:text-6xl font-belleza text-[#2f2a28] uppercase">
             Contact Form
           </h3>
         </div>
@@ -119,7 +132,7 @@ const ContactForm = () => {
                     } focus:outline-none focus:border-[#A3A3A3] placeholder:text-[#A3A3A3] placeholder:font-poppins`}
                 />
                 {errors.phone && (
-                  <p className="text-red-500 text-sm mt-1">{errors.phone}</p>
+                  <p className="text-red-500 text-[12px] mt-1">{errors.phone}</p>
                 )}
               </div>
             </div>
@@ -148,7 +161,7 @@ const ContactForm = () => {
 
           {message && (
             <p
-              className={`text-center text-sm mt-4`}
+              className={`text-center text-[12px] mt-4`}
             >
               {message}
             </p>

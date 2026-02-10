@@ -24,11 +24,11 @@ const Navbar = () => {
     <header
       className={`
         sticky top-0 z-[20] transition-all duration-300
-        ${scrolled ? "bg-black/90 text-white" : "bg-black/40"}
+        ${scrolled ? "bg-white text-black" : "bg-white"}
       `}
     >
-      <nav className="max-w-[1400px] m-auto font-poppins">
-        <div className="md:mx-[40px] mx-5 py-2 sm:py-3 lg:py-[14px]">
+      <nav className="m-auto font-poppins">
+        <div className="md:mx-[0px] mx-5 py-2 sm:py-3 lg:py-[0px]">
 
           {/* MOBILE (unchanged) */}
           <div className="flex justify-between h-16 items-center md:hidden">
@@ -50,25 +50,23 @@ const Navbar = () => {
           </div>
 
           {/* DESKTOP */}
-          <div className="hidden md:grid grid-cols-[1fr_auto_1fr] items-center h-20">
+          <div className="hidden md:flex flex-col items-center">
 
-            {/* LEFT LINKS */}
-            <div className="flex justify-end gap-20 pr-20">
+            {/* LOGO ROW */}
+            <div className="flex items-center justify-center h-24">
+              <Link href="/">
+                <Image
+                  src="/images/homePageImages/mandawaLogo.png"
+                  alt="Mandawa Design House"
+                  width={150}
+                  height={100}
+                  className="object-contain w-[135px]"
+                />
+              </Link>
+            </div>
+            <div className="flex items-center justify-center gap-6 h-10 border-t w-full border-gray-200">
               <Link href="/" className="nav-link">HOME</Link>
               <Link href="/collection" className="nav-link">COLLECTION</Link>
-            </div>
-          <Link href="/" className="flex justify-center">
-            <Image
-              src="/images/homePageImages/mandawaLogo.png"
-              alt="Mandawa Design House"
-              width={150}
-              height={100}
-              className="object-contain w-[135px]"
-            />
-          </Link>
-
-            {/* RIGHT LINKS */}
-            <div className="flex justify-start gap-20 pl-20">
               <Link href="/contact-us" className="nav-link">CONTACT US</Link>
               <Link href="/about" className="nav-link">ABOUT US</Link>
             </div>

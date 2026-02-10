@@ -14,14 +14,14 @@ const ProductionDeliveryBuy = () => {
             </h3>
             <div className="h-[1px] w-12 bg-gray-300 mb-4 w-full" />
 
-            <ul className="space-y-2 text-[#42393B] text-sm">
-              <li className="text-sm font-poppins text-[#42393B]">Production Time :- 2–4 weeks</li>
+            <ul className="space-y-2 text-[#42393B] text-[12px]">
+              <li className="text-[12px] font-poppins text-[#42393B]">Production Time :- 2–4 weeks</li>
 
-              <li className="pt-2 text-sm font-poppins text-[#42393B]">Worldwide Shipping – DHL</li>
+              <li className="pt-2 text-[12px] font-poppins text-[#42393B]">Worldwide Shipping – DHL</li>
               <li>By Air: 7–10 days</li>
               <li>By Water: 40–60 days</li>
 
-              <li className="pt-2 text-sm font-poppins text-[#42393B]">Inside India Shipping</li>
+              <li className="pt-2 text-[12px] font-poppins text-[#42393B]">Inside India Shipping</li>
               <li>By Air: 5–7 days</li>
               <li>By Road: 6–12 days</li>
             </ul>
@@ -43,7 +43,7 @@ const ProductionDeliveryBuy = () => {
               From our eCommerce platform
             </p>
 
-            <ul className="list-decimal list-inside space-y-2 text-gray-700 text-sm">
+            <ul className="list-decimal list-inside space-y-2 text-gray-700 text-[12px]">
               <li>Browse curated handcrafted collections</li>
               <li>Transparent pricing & timelines</li>
               <li>Dedicated support for first-time buyers</li>
@@ -63,7 +63,7 @@ const ProductionDeliveryBuy = () => {
 
             <div className="h-[1px] w-12 bg-gray-300 mb-4 w-full" />
 
-            <ol className="list-decimal list-inside space-y-2 text-gray-700 text-sm leading-relaxed">
+            <ol className="list-decimal list-inside space-y-2 text-gray-700 text-[12px] leading-relaxed">
               <li>Submit an enquiry through the website</li>
               <li>Receive pricing, production & shipping details</li>
               <li>Confirm order & make 50% advance payment</li>

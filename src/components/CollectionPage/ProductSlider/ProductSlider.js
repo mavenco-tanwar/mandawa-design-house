@@ -31,12 +31,12 @@ const UniversalSlider = ({ items = [], heading = "Related Products" }) => {
   if (!items.length) return null;
 
   return (
-    <section className="pb-[40px] pt-0 md:py-[80px] px-4 overflow-hidden">
-      <div className="max-w-[1280px] mx-auto flex flex-col gap-[60px] overflow-hidden">
+    <section className="pb-[40px] pt-0 md:py-[40px] px-4 overflow-hidden">
+      <div className="max-w-[1280px] mx-auto flex flex-col gap-[30px] md:gap-[60px] overflow-hidden">
 
         {/* Heading */}
         <div className="flex justify-center">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-belleza text-[#3FA291] text-center">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-belleza  text-[#2f2a28] uppercase text-center">
             {heading}
           </h2>
         </div>
@@ -66,7 +66,7 @@ const UniversalSlider = ({ items = [], heading = "Related Products" }) => {
                   className="relative flex flex-col gap-[15px] sm:gap-[20px] cursor-pointer group"
                 >
                   {/* Image */}
-                  <div className="relative w-[290px] h-[330px]">
+                  <div className="relative w-[100%] h-[330px]">
                     <Image
                       src={item.image || "/images/placeholder.png"}
                       fill
@@ -87,12 +87,12 @@ const UniversalSlider = ({ items = [], heading = "Related Products" }) => {
                         }`}
                     >
                       <div className="text-center px-3">
-                        {item.tag && (
+                        {/* {item.tag && (
                           <span className="block text-white text-[14px] tracking-wide font-poppins">
                             {item.tag}
                           </span>
-                        )}
-                        <h4 className="mt-2 text-white font-belleza text-[20px]">
+                        )} */}
+                        <h4 className="mt-2 text-white font-belleza text-[12px]">
                           {item.title}
                         </h4>
                       </div>
@@ -110,12 +110,12 @@ const UniversalSlider = ({ items = [], heading = "Related Products" }) => {
                           : "group-hover:opacity-0"
                       }`}
                   >
-                    {item.tag && (
+                    {/* {item.tag && (
                       <span className="font-poppins text-[14px] tracking-wide">
                         {item.tag}
                       </span>
-                    )}
-                    <p className="font-belleza text-[20px] text-[#191919]">
+                    )} */}
+                    <p className="font-belleza text-[12px] text-[#191919] text-center">
                       {item.title}
                     </p>
                   </div>

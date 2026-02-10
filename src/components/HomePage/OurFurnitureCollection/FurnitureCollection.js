@@ -11,7 +11,7 @@ const FurnitureCollection = () => {
     
     <div className="flex justify-center items-center">
       <div className="max-w-[811px] flex flex-col gap-3.5">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-belleza text-[#3FA291] text-center">
+        <h2 className="text-3xl md:text-5xl lg:text-6xl font-belleza  text-[#2f2a28] uppercase text-center">
           Our Furniture Collection
         </h2>
         <p className="text-base sm:text-lg md:text-xl font-poppins text-[#42393B] text-center">
@@ -35,7 +35,7 @@ const FurnitureCollection = () => {
           />
           </div>
           <h3 className="mt-4 text-lg sm:text-xl md:text-2xl font-belleza text-[#42393B]">{data.title}</h3>
-          <p className="mt-2 text-[#42393B] font-poppins max-w-[300px] text-sm sm:text-base">
+          <p className="mt-2 text-[#42393B] font-poppins max-w-[300px] text-[12px] sm:text-base">
             {data.description}
           </p>
         </div>

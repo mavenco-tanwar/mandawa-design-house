@@ -36,11 +36,11 @@ const MandawaHomeImage = () => {
     //     {/* Bottom content */}
     //     <div className="absolute bottom-15 md:bottom-28 left-1/2 -translate-x-1/2 w-full px-4">
     //       <div className="max-w-[900px] mx-auto text-center">
-    //         <p className="text-white text-xs sm:text-sm md:text-lg mb-2">
+    //         <p className="text-white text-xs sm:text-[12px] md:text-[12px] mb-2">
     //           <b>Crafting India’s Living Heritage Through Handcrafted Furniture</b>
     //         </p>
 
-    //         <p className="text-white text-xs sm:text-sm md:text-base mb-2">
+    //         <p className="text-white text-xs sm:text-[12px] md:text-base mb-2">
     //           Mandawa Design House is not a furniture factory. It is a
     //           <b> heritage-driven design house</b> dedicated to preserving India’s
     //           disappearing art forms through handcrafted furniture. Every piece
@@ -48,7 +48,7 @@ const MandawaHomeImage = () => {
     //           knowledge, patience, and cultural memory.
     //         </p>
 
-    //         <p className="text-white text-xs sm:text-sm md:text-base">
+    //         <p className="text-white text-xs sm:text-[12px] md:text-base">
     //           We work exclusively on <b>bulk, custom, and long-term B2B projects</b> for
     //           clients who value originality, depth, and legacy over mass
     //           production.
@@ -65,15 +65,15 @@ const MandawaHomeImage = () => {
     <section className="relative h-screen w-full mt-[-108px]">
       {/* Background Image */}
       <Image
-        src="/images/homePageImages/hero.png"
+        src="/images/homePageImages/heroN.png"
         alt="Mandawa Design House Forest"
         fill
         priority
-        className="object-cover"
+        className="object-cover" 
       />
 
       {/* CENTER LOGO */}
-      <div className="absolute inset-0 z-10 flex items-center justify-center">
+      {/* <div className="absolute inset-0 z-10 flex items-center justify-center">
         <Image
           src="/images/homePageImages/mandawaLogo.png"
           alt="Mandawa Design House"
@@ -81,16 +81,16 @@ const MandawaHomeImage = () => {
           height={300}
           className="object-contain w-[450px] max-md:w-[280px]"
         />
-      </div>
+      </div> */}
 
       {/* BOTTOM TEXT */}
-      <div className="absolute bottom-10 md:bottom-14 left-1/2 z-10 w-full -translate-x-1/2 px-6 text-center text-white">
+      {/* <div className="absolute bottom-10 md:bottom-14 left-1/2 z-10 w-full -translate-x-1/2 px-6 text-center text-white">
         <p className="text-xs md:text-[22px] tracking-widest">
           ONCE A LIVING TREE, ROOTED IN THE EARTH.
           <br />
           NOW GIVEN A SECOND LIFE, CRAFTED TO BELONG IN YOUR HOME
         </p>
-      </div>
+      </div> */}
     </section>
 
   );

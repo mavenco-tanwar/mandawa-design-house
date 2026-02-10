@@ -16,8 +16,8 @@ const CollectionHeroN = () => {
       
               <div className="absolute inset-0 flex items-center justify-center px-4">
                 <h1 className="
-                  text-white font-serif uppercase text-center
-                  text-[26px] sm:text-[64px] md:text-[100px] lg:text-[100px]
+                  text-white   uppercase text-center
+                  text-[26px] sm:text-[64px] md:text-[85px] lg:text-[85px]
                   tracking-[0.15em] sm:tracking-[0.25em]
                 ">
                   OUR COLLECTION

@@ -17,7 +17,7 @@ const WhyChooseUs = () => {
     </div>
     <div className="flex flex-col gap-10">
       <div className="flex flex-col gap-3.5 max-w-[506px]">
-        <h3 className="font-belleza text-4xl md:text-6xl sm:text-5xl text-[#3FA291]">
+        <h3 className="font-belleza text-4xl md:text-6xl sm:text-5xl  text-[#2f2a28]">
           Why Choose Us?
         </h3>
         <p className="font-poppins text-[#42393B] text-[18px] sm:text-[20px]">

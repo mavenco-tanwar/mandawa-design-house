@@ -43,10 +43,10 @@ const Hero = () => {
 
           <div className="max-w-[625px] flex flex-col gap-5 text-center">
             <div className="flex flex-col gap-3.5">
-              <h2 className="text-[#6E2F1B] font-belleza text-base md:text-lg lg:text-xl">
+              <h2 className="text-[#6E2F1B] font-belleza text-base md:text-[12px] lg:text-xl">
                 The Story of Highland House.
               </h2>
-              <h2 className="text-[#6E2F1B] font-belleza text-base md:text-lg lg:text-xl">
+              <h2 className="text-[#6E2F1B] font-belleza text-base md:text-[12px] lg:text-xl">
                 The birthplace of dreams, designs, and destinies.
               </h2>
             </div>
@@ -56,7 +56,7 @@ const Hero = () => {
               "Highland House was more than just a manufacturing unit, it was a cradle of creativity, craftsmanship, and community. It became a beacon for talented artisans from across the region — a place where skills were not only taught but revered, where hands shaped dreams into reality.",
               "Within its buzzing workshops, the scent of wood shavings, the clinking of chisels against marble, and the weaving of rattan filled the air with a sense of purpose. Where craftsmanship was a way of life, and every piece created carried the spirit of Mandawa’s rich heritage.",
             ].map((text, i) => (
-              <p key={i} className="font-poppins text-sm md:text-base lg:text-[18px] text-[#666666]">
+              <p key={i} className="font-poppins text-[12px] md:text-base lg:text-[18px] text-[#666666]">
                 {text}
               </p>
             ))}
@@ -80,7 +80,7 @@ const Hero = () => {
             "Mandawa Design House is proud to be one of them, a living tribute to the legacy of Highland House and the artisans it empowered.",
             "Even though the factory doors have long since shut, the values, vision, and craftsmanship of Highland House live on — in every lovingly crafted piece of furniture, in every artisan’s journey, and in every story built by hand and heart.",
           ].map((text, i) => (
-            <p key={i} className="font-poppins text-sm md:text-base lg:text-[18px] text-[#666666]">
+            <p key={i} className="font-poppins text-[12px] md:text-base lg:text-[18px] text-[#666666]">
               {text}
             </p>
           ))}
