@@ -56,7 +56,8 @@ const ProductInfo = ({ product }) => {
             </div> */}
 
               <div className="flex flex-col gap-2 pb-5 border-b border-gray-200">
-                <p className="text-[#42393B] font-poppins text-[12px]">{product.tag}</p>
+                {/* <p className="text-[#42393B] font-poppins text-[12px]">{product.tag}</p> */}
+                <p className="text-[#42393B] font-poppins text-[12px]"><b>{product.title}</b></p>
                 <p className="text-[12px] font-poppins text-[#42393B]">{product.size}</p>
                 <p className="text-[12px] font-poppins text-[#42393B]">
                   {product.description}
