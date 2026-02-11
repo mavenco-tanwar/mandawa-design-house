@@ -62,14 +62,14 @@ const MandawaHomeImage = () => {
     //     </div>
     //   </div>
     // </section>
-    <section className="relative h-screen w-full mt-[-108px]">
+    <section className="relative h-screen w-full">
       {/* Background Image */}
       <Image
-        src="/images/homePageImages/heroN.png"
+        src="/images/homePageImages/heroT.png"
         alt="Mandawa Design House Forest"
         fill
         priority
-        className="object-cover" 
+        className="w-full h-full object-cover object-[40%_50%] md:object-top" 
       />
 
       {/* CENTER LOGO */}

@@ -6,7 +6,7 @@ const AboutHeroN = () => {
       {/* HERO */}
       <section className="relative overflow-hidden h-[70vh] sm:h-[80vh] lg:h-[90vh] w-full lg:mt-[-108px]">
         <Image
-          src="/images/homePageImages/screen.jpg"
+          src="/images/homePageImages/AboutN.jpeg"
           alt="Mandawa wood craftsmanship"
           fill
           priority

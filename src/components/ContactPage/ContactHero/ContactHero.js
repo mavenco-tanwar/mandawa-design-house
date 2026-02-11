@@ -23,7 +23,7 @@ const ContactHero = ({title, imageUrl}) => {
     // </section>
     <section className="relative overflow-hidden h-[70vh] sm:h-[80vh] lg:h-[90vh] w-full lg:mt-[-108px]">
         <Image
-          src="/images/global/contacthero.png"
+          src="/images/global/contactN.png"
           alt="Mandawa wood craftsmanship"
           fill
           priority
