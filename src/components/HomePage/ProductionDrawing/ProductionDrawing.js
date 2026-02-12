@@ -10,7 +10,7 @@ import ArrowBtn from "./ArrowBtn";
 
 const images = [
   "/images/sliderImage/10.webp",
-  "/images/sliderImage/7.webp",
+  // "/images/sliderImage/7.webp",
   "/images/sliderImage/9.webp",
   "/images/sliderImage/8.webp",
   "/images/sliderImage/11.jpeg",

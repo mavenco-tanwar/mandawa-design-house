@@ -51,9 +51,10 @@ const Navbar = () => {
 
           {/* DESKTOP */}
           <div className="hidden md:flex flex-col items-center">
-
             {/* LOGO ROW */}
-            <div className="flex items-center justify-center h-24">
+            <div className="flex items-center justify-center h-24 gap-24">
+              <Link href="/" className="nav-link">HOME</Link>
+              <Link href="/collection" className="nav-link">COLLECTION</Link>
               <Link href="/">
                 <Image
                   src="/images/homePageImages/mandawaLogo.png"
@@ -63,10 +64,6 @@ const Navbar = () => {
                   className="object-contain w-[135px]"
                 />
               </Link>
-            </div>
-            <div className="flex items-center justify-center gap-6 h-10 border-t w-full border-gray-200">
-              <Link href="/" className="nav-link">HOME</Link>
-              <Link href="/collection" className="nav-link">COLLECTION</Link>
               <Link href="/contact-us" className="nav-link">CONTACT US</Link>
               <Link href="/about" className="nav-link">ABOUT US</Link>
             </div>

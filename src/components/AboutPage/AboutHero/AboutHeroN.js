@@ -4,7 +4,7 @@ const AboutHeroN = () => {
   return (
     <>
       {/* HERO */}
-      <section className="relative overflow-hidden h-[70vh] sm:h-[80vh] lg:h-[84vh] w-full">
+      <section className="relative overflow-hidden h-[70vh] sm:h-[80vh] lg:h-[88.8vh] w-full">
         <Image
           src="/images/homePageImages/AboutN.jpeg"
           alt="Mandawa wood craftsmanship"
@@ -15,8 +15,8 @@ const AboutHeroN = () => {
 
         <div className="absolute inset-0 bg-black/50" />
 
-        <div className="absolute inset-0 flex items-center justify-center px-4">
-          <h1 className="text-white   uppercase text-center
+        <div className="absolute inset-0 flex justify-center px-4">
+          <h1 className="text-white   uppercase text-center relative top-[16%]
             text-[26px] sm:text-[64px] md:text-[120px] lg:text-[85px]
             tracking-[0.18em] sm:tracking-[0.25em]">
             About Us

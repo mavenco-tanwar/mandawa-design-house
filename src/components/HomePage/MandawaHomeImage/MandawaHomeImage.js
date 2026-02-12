@@ -62,7 +62,7 @@ const MandawaHomeImage = () => {
     //     </div>
     //   </div>
     // </section>
-    <section className="relative h-screen w-full">
+    <section className="relative h-[88.8vh] w-full">
       {/* Background Image */}
       <Image
         src="/images/homePageImages/heroT.png"
