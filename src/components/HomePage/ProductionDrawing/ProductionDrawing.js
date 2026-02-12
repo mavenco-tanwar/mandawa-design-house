@@ -9,24 +9,34 @@ import Image from "next/image";
 import ArrowBtn from "./ArrowBtn";
 
 const images = [
-  "/images/global/drawing-img-1.png",
-  "/images/global/drawing-img-2.png",
-  "/images/global/drawing-img-3.png",
-  "/images/global/drawing-img-1.png",
-  "/images/global/drawing-img-2.png",
-  "/images/global/drawing-img-3.png",
+  "/images/sliderImage/10.webp",
+  "/images/sliderImage/7.webp",
+  "/images/sliderImage/9.webp",
+  "/images/sliderImage/8.webp",
+  "/images/sliderImage/11.jpeg",
+  "/images/sliderImage/12.jpeg",
+  "/images/sliderImage/13.jpeg",
+  "/images/sliderImage/14.jpeg",
+  "/images/sliderImage/1.webp",
+  "/images/sliderImage/2.webp",
+  "/images/sliderImage/3.webp",
+  "/images/sliderImage/4.webp",
+  "/images/sliderImage/5.webp",
+  "/images/sliderImage/6.webp",
+  "/images/sliderImage/15.jpeg",
+
 ];
 
 const ProductionDrawing = () => {
   const swiperRef = useRef(null);
 
   return (
-    <section className="py-[60px] px-4 bg-[#F6F4EE] overflow-hidden">
+    <section className="py-[0px] px-4 overflow-hidden">
       <div className="max-w-[1280px] m-auto flex flex-col gap-[40px] overflow-hidden">
         <div className="flex justify-center">
-          <h2 className="text-3xl md:text-5xl lg:text-6xl font-belleza  text-[#2f2a28] uppercase text-center">
+          {/* <h2 className="text-3xl md:text-5xl lg:text-6xl font-belleza  text-[#2f2a28] uppercase text-center">
             Production Drawing
-          </h2>
+          </h2> */}
         </div>
 
         <Swiper
@@ -64,14 +74,14 @@ const ProductionDrawing = () => {
               key={index}
               className=" lg:!w-[650px]
                      h-[250px] sm:h-[350px] md:h-[450px] lg:h-[592px] 
-                     bg-white rounded-xl overflow-hidden"
+                     bg-white overflow-hidden"
             >
               <Image
                 src={img}
                 alt={`Slide ${index}`}
                 width={300}
                 height={400}
-                className="object-contain w-full h-full"
+                className="object-cover w-full h-[400px]"
               />
             </SwiperSlide>
           ))}

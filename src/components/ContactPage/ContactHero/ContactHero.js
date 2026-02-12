@@ -21,13 +21,13 @@ const ContactHero = ({title, imageUrl}) => {
     //     </div>
     //   </div>
     // </section>
-    <section className="relative overflow-hidden h-[70vh] sm:h-[80vh] lg:h-[90vh] w-full lg:mt-[-108px]">
+    <section className="relative overflow-hidden h-[70vh] sm:h-[80vh] lg:h-[84vh] w-full">
         <Image
           src="/images/global/contactN.png"
           alt="Mandawa wood craftsmanship"
           fill
           priority
-          className="object-cover"
+          className="object-cover object-top"
         />
 
         <div className="absolute inset-0 bg-black/50" />

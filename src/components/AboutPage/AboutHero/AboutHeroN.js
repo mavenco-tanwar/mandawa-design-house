@@ -4,13 +4,13 @@ const AboutHeroN = () => {
   return (
     <>
       {/* HERO */}
-      <section className="relative overflow-hidden h-[70vh] sm:h-[80vh] lg:h-[90vh] w-full lg:mt-[-108px]">
+      <section className="relative overflow-hidden h-[70vh] sm:h-[80vh] lg:h-[84vh] w-full">
         <Image
           src="/images/homePageImages/AboutN.jpeg"
           alt="Mandawa wood craftsmanship"
           fill
           priority
-          className="object-cover"
+          className="object-cover object-top"
         />
 
         <div className="absolute inset-0 bg-black/50" />
@@ -27,7 +27,6 @@ const AboutHeroN = () => {
       {/* CONTENT */}
       <section
         className="py-6 md:py-12 px-4 bg-white"
-        style={{ boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px" }}
       >
         <div className="text-center mx-auto mb-5 md:mb-10">
           <h2 className="uppercase tracking-wide text-lg sm:text-xl md:text-3xl   text-[#42393B]">

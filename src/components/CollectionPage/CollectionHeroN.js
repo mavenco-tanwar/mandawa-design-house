@@ -3,7 +3,7 @@ import Image from "next/image";
 const CollectionHeroN = () => {
 
   return (
-      <section className="relative overflow-hidden h-[70vh] sm:h-[80vh] lg:h-[90vh] w-full lg:mt-[-108px]">
+      <section className="relative overflow-hidden h-[70vh] sm:h-[80vh] lg:h-[84vh] w-full">
               <Image
                 src="/images/homePageImages/collectionN.png"
                 alt="Mandawa wood craftsmanship"
