@@ -51,9 +51,9 @@ export default function HandcraftedSplitSection() {
             <p className="uppercase tracking-widest text-[12px] md:w-[300px] mb-5 md:mb-10">
               B2B furniture for brands that choose depth over mass production.
             </p>
-            <Link href="/collection">
+            <Link href="/contact-us">
               <Button
-                text="Collection"
+                text="Contact for B2B or Bulk Order"
                 variant="Brown"
               />
             </Link>

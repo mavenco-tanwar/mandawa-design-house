@@ -10,7 +10,6 @@ import ArrowBtn from "./ArrowBtn";
 
 const images = [
   "/images/sliderImage/10.webp",
-  // "/images/sliderImage/7.webp",
   "/images/sliderImage/9.webp",
   "/images/sliderImage/8.webp",
   "/images/sliderImage/11.jpeg",
@@ -24,7 +23,15 @@ const images = [
   "/images/sliderImage/5.webp",
   "/images/sliderImage/6.webp",
   "/images/sliderImage/15.jpeg",
-
+  "/images/sliderImage/16.jpeg.jpg",
+  "/images/sliderImage/17.jpeg.jpg",
+  "/images/sliderImage/18.jpeg.jpg",
+  "/images/sliderImage/19.jpeg.jpg",
+  "/images/sliderImage/20.jpeg.jpg",
+  "/images/sliderImage/21.jpeg.jpg",
+  "/images/sliderImage/22.jpeg.jpg",
+  "/images/sliderImage/23.jpeg.jpg",
+  "/images/sliderImage/24.jpeg.jpg",
 ];
 
 const ProductionDrawing = () => {

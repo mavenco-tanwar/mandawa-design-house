@@ -90,7 +90,7 @@ useEffect(() => {
   };
 
   return (
-    <section className="py-10 md:py-20 px-4 pb-2">
+    <section className="py-8 md:py-20 px-4 pb-2">
       <div className="max-w-[1280px] mx-auto flex flex-col gap-10">
         <div className="text-center">
           <h3 className="text-4xl md:text-5xl lg:text-6xl font-belleza text-[#2f2a28] uppercase">

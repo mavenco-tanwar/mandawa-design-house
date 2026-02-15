@@ -8,7 +8,8 @@ const ContactUs = () => {
   return (
 <>
 <ContactHero title="Contact Us" imageUrl="/images/global/contacthero.png"/>
-{/* <ContactMap/> */}
+<ContactMap/>
+<hr className="border-t border-gray-300 mx-5 md:mx-20" />
 <ContactForm/>
 </>
   )
