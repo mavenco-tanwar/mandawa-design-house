@@ -10,18 +10,12 @@ import ArrowBtn from "./ArrowBtn";
 
 const images = [
   "/images/sliderImage/10.webp",
+  "/images/sliderImage/23.jpeg.jpg",
   "/images/sliderImage/9.webp",
   "/images/sliderImage/8.webp",
   "/images/sliderImage/11.jpeg",
   "/images/sliderImage/12.jpeg",
-  "/images/sliderImage/13.jpeg",
-  "/images/sliderImage/14.jpeg",
   "/images/sliderImage/1.webp",
-  "/images/sliderImage/2.webp",
-  "/images/sliderImage/3.webp",
-  "/images/sliderImage/4.webp",
-  "/images/sliderImage/5.webp",
-  "/images/sliderImage/6.webp",
   "/images/sliderImage/15.jpeg",
   "/images/sliderImage/16.jpeg.jpg",
   "/images/sliderImage/17.jpeg.jpg",
@@ -30,7 +24,6 @@ const images = [
   "/images/sliderImage/20.jpeg.jpg",
   "/images/sliderImage/21.jpeg.jpg",
   "/images/sliderImage/22.jpeg.jpg",
-  "/images/sliderImage/23.jpeg.jpg",
   "/images/sliderImage/24.jpeg.jpg",
 ];
 
