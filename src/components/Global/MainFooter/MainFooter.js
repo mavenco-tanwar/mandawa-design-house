@@ -39,8 +39,8 @@ const MainFooter = () => {
       <div className="flex flex-col gap-4">
         <p className="underline font-belleza text-lg sm:text-xl md:text-2xl">Contact Us:</p>
         <div className="flex flex-col gap-1">
-          <a href="tel:+919829823333" className="text-[12px] sm:text-base md:text-[12px] font-poppins">
-            +91 9829823333
+          <a href="tel:+919116955488" className="text-[12px] sm:text-base md:text-[12px] font-poppins">
+            +91 9116955488
           </a>
           <a href="tel:+917014447678" className="text-[12px] sm:text-base md:text-[12px] font-poppins">
             +91 7014447678

@@ -62,10 +62,10 @@ const Footer = () => {
               </p>
               <div className="flex flex-col gap-1">
                 <Link
-                  href="tel:+919829823333"
+                  href="tel:+919116955488"
                   className="text-[14px] sm:text-[16px] md:text-[18px] font-poppins text-white"
                 >
-                  +91 9829823333
+                  +91 9116955488
                 </Link>
 
                 <Link

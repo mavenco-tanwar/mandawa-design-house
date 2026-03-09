@@ -32,8 +32,8 @@ const ContactMap = () => {
                 <h4 className="uppercase tracking-wide text-[18px] md:text-[22px]  text-[#000]">
                   Phone
                 </h4>
-                <Link href="tel:+919829823333" className="tracking-widest text-[12px] md:text-[16px] hover:opacity-60 transition">
-                  +91 9829823333
+                <Link href="tel:+919116955488" className="tracking-widest text-[12px] md:text-[16px] hover:opacity-60 transition">
+                  +91 9116955488
                 </Link>
               </div>
             </div>

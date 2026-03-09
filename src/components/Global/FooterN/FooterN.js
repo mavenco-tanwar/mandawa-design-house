@@ -57,7 +57,7 @@ const Footer = () => {
                 {/* <Link href="https://www.linkedin.com/in/mandawadesignhouse/"><Image className="cursor-pointer" src={"/images/global/linkedin.svg"} width={24} height={24} alt="LinkedIn" /></Link> */}
                 <Link href="https://www.instagram.com/mandawa_design_house?igsh=MzR5OHljMDNkYjR4"><Image className="cursor-pointer" src={"/images/homePageImages/instagram.png"} width={16} height={16} alt="Instagram" /></Link>
             <Link href="https://pin.it/4fhXXpTuk"><Image className="cursor-pointer" src={"/images/homePageImages/pinterest.png"} width={16} height={16} alt="pinterest" /></Link>
-            <Link href="https://wa.me/919829823333"><Image className="cursor-pointer" src={"/images/homePageImages/whatsapp.png"} width={16} height={16} alt="whatsapp" /></Link>
+            <Link href="https://wa.me/919116955488"><Image className="cursor-pointer" src={"/images/homePageImages/whatsapp.png"} width={16} height={16} alt="whatsapp" /></Link>
           </div>
         </div>
 
