@@ -10,7 +10,6 @@ import ArrowBtn from "./ArrowBtn";
 
 const images = [
   "/images/sliderImage/10.webp",
-  "/images/sliderImage/23.webp",
   "/images/sliderImage/9.webp",
   "/images/sliderImage/8.webp",
   "/images/sliderImage/11.jpeg",
@@ -22,9 +21,6 @@ const images = [
   "/images/sliderImage/18.jpeg",
   "/images/sliderImage/19.jpeg",
   "/images/sliderImage/20.jpeg",
-  "/images/sliderImage/21.webp",
-  "/images/sliderImage/22.webp",
-  "/images/sliderImage/24.webp",
 ];
 
 const ProductionDrawing = () => {
